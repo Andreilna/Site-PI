@@ -23,6 +23,7 @@ Bem-vindo ao **Projeto Ceres**! Nosso objetivo é unir **sustentabilidade** e **
    - 📑 **Érlon Viana** - Gerente de Documentação.
    - 🎨 **João Victor** - Designer UX/UI.
    - 📱 **Leandro Sabino** - Desenvolvedor Mobile.
+   - 👨‍💻 **Ricardo Estevam** - Desenvolvedor Web.
 
 ---
 
