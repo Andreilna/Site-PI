@@ -8,7 +8,7 @@
 #header {
   box-sizing: border-box;
   padding: 0;
-  background-color: #e0b13c; /* Dourado mais leve */
+  background-color: #e0b13c;
 }
 
 #header a {
@@ -32,7 +32,7 @@
 }
 
 #header {
-  background-color: #e0b13c; /* Dourado atualizado */
+  background-color: #e0b13c;
   padding: 5px 0;
   position: relative;
 }
@@ -46,7 +46,7 @@
   display: block;
   font-size: 25px;
   padding: 10px 0;
-  color: #1e1e1e; /* Texto quase preto */
+  color: #1e1e1e;
   padding-right: 30px;
   font-weight: normal;
 }
@@ -141,7 +141,7 @@
 /* Projeto */
 #menu {
   height: 850px;
-  background-color: #f2f2e9; /* Fundo mais suave */
+  background-color: #fff3f3;
 }
 
 .projeto {
@@ -193,7 +193,7 @@
 }
 
 .background {
-  background-color: #f2f2e9; /* Fundo mais claro e moderno */
+  background-color: #fff3f3;
 }
 
 /* Noticias */
@@ -203,7 +203,7 @@
   font-size: 50px;
 }
 
-.img_pinkfarm {
+.imagens {
   width: 100%;
   max-width: 900px;
   height: auto;
