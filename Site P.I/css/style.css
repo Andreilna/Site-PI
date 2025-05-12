@@ -34,7 +34,9 @@
 #header {
   background-color: #e0b13c;
   padding: 5px 0;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 #header .nav ul li {
@@ -198,6 +200,7 @@
 
 /* Noticias */
 .noticias {
+  padding-top: 70px;
   text-align: left;
   font-weight: bold;
   font-size: 50px;
