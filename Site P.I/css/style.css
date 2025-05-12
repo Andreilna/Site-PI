@@ -46,7 +46,7 @@
 
 #header .nav ul li a {
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px 0;
   color: #1e1e1e;
   padding-right: 30px;
@@ -142,7 +142,6 @@
 
 /* Projeto */
 #menu {
-  height: 850px;
   background-color: #fff3f3;
 }
 
@@ -350,3 +349,68 @@
     font-size: 22px;
   }
 }
+
+#ambiente-autonomo {
+  background-color: #f5f9f5;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.container-autonomo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-autonomo h2 {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.container-autonomo .intro {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.card-explicativo {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-explicativo.invertido {
+  flex-direction: row-reverse;
+}
+
+.card-img {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-texto {
+  flex: 1;
+}
+
+.card-texto h3 {
+  color: #388e3c;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.card-texto p {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
