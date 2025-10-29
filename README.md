@@ -1,70 +1,81 @@
-# 🌱 Projeto Ceres
+<!-- =============================== -->
+<!--        🌱 EQUIPE CERES          -->
+<!-- =============================== -->
 
-Bem-vindo ao **Projeto Ceres**!  
-Unimos **sustentabilidade**, **tecnologia** e **inteligência artificial** para desenvolver soluções que transformam a agricultura moderna.
+# 🌾 Equipe Ceres — Site Oficial  
 
----
-
-## 🚀 Sobre o Projeto
-
-O **Ceres** é uma iniciativa que cria um **sistema autônomo para fazendas verticais**, orientado por **redes neurais** e **análise de dados em tempo real**.  
-Nosso foco é tornar o cultivo mais **eficiente**, **inteligente** e **ecológico**, aplicando conceitos de **IoT**, **Machine Learning** e **automação agrícola**.
-
-### ⚙️ Tecnologias Aplicadas
-
-- 🤖 **Machine Learning e AutoML**
-- 🌿 **Sensores e automação com Arduino**
-- ☁️ **Monitoramento via IoT**
-- 🧠 **Rede neural com aprendizado adaptativo**
-- 🔒 **Conectividade e controle central seguro**
+[![Status](https://img.shields.io/badge/status-online-success?style=for-the-badge&logo=vercel)](https://equipe-ceres.vercel.app/)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]()
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)]()
+[![Deploy](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
+[![Author](https://img.shields.io/badge/By-Drey-ff69b4?style=for-the-badge&logo=github)](https://github.com/Dinozin)
 
 ---
 
-## 🧩 Estrutura do Site
+## 🪴 Visão Geral
 
-O site do projeto foi desenvolvido com **HTML**, **CSS** e **JavaScript puros**, dividido em seções informativas e interativas:
+O **site oficial da Equipe Ceres** é uma plataforma digital criada para representar nossa equipe de desenvolvimento e inovação tecnológica voltada ao **agronegócio sustentável** e **sistemas inteligentes**.
 
-### 📰 Notícias e Inovações
-- Internet das Coisas (IoT) revolucionando o campo  
-- Inteligência Artificial aumentando a produtividade  
-- Hidroponia e o uso eficiente da água  
-- AutoML e a automação de modelos de IA  
-- Agricultura Urbana (exemplo: [Pink Farms](https://pinkfarms.com.br/))
+Com um design limpo, informativo e interativo, o projeto reúne tudo sobre a Ceres — desde sua formação até os projetos autônomos de **fazendas verticais orientadas por redes neurais**.
 
-### 🌍 Projeto Greenrise
-Apresenta os **7 componentes essenciais** de uma fazenda vertical inteligente:
+🌐 **Acesse agora:** [https://equipe-ceres.vercel.app/](https://equipe-ceres.vercel.app/)
 
-1. Sensores e coleta de dados  
-2. Atuadores inteligentes  
-3. Rede neural treinada  
-4. Controle central  
-5. Banco de dados inteligente  
-6. Conectividade segura  
-7. Autoajuste adaptativo  
+---
 
-### 🎯 ODS (Objetivos de Desenvolvimento Sustentável)
+## 🌟 Missão da Ceres
 
-O projeto apoia os seguintes **ODS da ONU**:
+> **“Cultivar o futuro através da tecnologia.”**  
+> A Ceres é formada por jovens desenvolvedores e pesquisadores que unem **ciência, tecnologia e sustentabilidade** para criar soluções inovadoras voltadas ao campo e à automação agrícola.
 
-- **ODS 2:** Fome Zero e Agricultura Sustentável  
-- **ODS 9:** Indústria, Inovação e Infraestrutura  
-- **ODS 11:** Cidades e Comunidades Sustentáveis  
-- **ODS 12:** Consumo e Produção Responsáveis  
+---
 
-### 👥 Nossa Equipe
+## 🧭 Estrutura do Site
 
-| Integrante | Função |
+O projeto contém diversas seções interativas, pensadas para apresentar o trabalho da equipe de forma clara e moderna:
+
+| Seção | Descrição |
+|-------|------------|
+| 🧑‍🤝‍🧑 **Sobre a Equipe** | História, propósito e integrantes da Equipe Ceres. |
+| 💼 **Portfólio** | Apresenta projetos, sistemas e protótipos. |
+| 📰 **Notícias** | Atualizações, eventos e conquistas. |
+| 🖼️ **Galeria** | Fotos e registros das atividades da equipe. |
+| 📅 **Agenda** | Cronograma de eventos, competições e entregas. |
+| 💬 **Depoimentos** | Feedbacks e opiniões de parceiros e integrantes. |
+| 📞 **Contato** | Formulário para comunicação e parcerias. |
+| 🧠 **Área Interativa** | Conteúdo dinâmico e educativo sobre nossas tecnologias. |
+| 🏆 **Reconhecimentos** | Prêmios, menções e destaques da equipe. |
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+O site foi desenvolvido **sem frameworks**, utilizando **HTML, CSS e JavaScript puros**, priorizando leveza e performance:
+
+| Tecnologia | Função |
 |-------------|--------|
-| 👨‍💻 **Andrei Lucas** | Desenvolvedor Front-end |
-| 📑 **Érlon Viana** | Gerente de Documentação / Back-end |
-| 📱 **Leandro Sabino** | UX / UI Designer |
-| 👨‍💻 **Ricardo Estevam** | Desenvolvedor Front-end |
+| **HTML5** | Estrutura semântica e acessível |
+| **CSS3** | Estilo, layout responsivo e animações |
+| **JavaScript (Vanilla)** | Funcionalidades dinâmicas e interatividade |
+| **Vercel** | Hospedagem e deploy contínuo |
+| **Google Fonts (Montserrat)** | Tipografia moderna e legível |
 
 ---
 
-## 🛠️ Como Executar Localmente
-
-Clone o repositório e abra o projeto:
+## 🧩 Estrutura de Pastas
 
 ```bash
-git clone https://github.com/Andreilna/Site-PI.git
+📁 Equipe-Ceres/
+├── 📄 index.html
+├── 📁 css/
+│   ├── style.css
+│   └── responsive.css
+├── 📁 js/
+│   ├── main.js
+│   └── animations.js
+├── 📁 assets/
+│   ├── images/
+│   ├── icons/
+│   └── logo/
+└── 📄 README.md
