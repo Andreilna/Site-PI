@@ -1,39 +1,40 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // 1. Funcionalidade do Menu Hambúrguer
+document.addEventListener('DOMContentLoaded', () => {
+    // ===== MENU HAMBÚRGUER =====
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.querySelector('.nav');
 
     if (menuToggle && nav) {
-        menuToggle.addEventListener('click', function() {
+        menuToggle.addEventListener('click', () => {
             nav.classList.toggle('active');
-            // Acessibilidade: Alterna o atributo aria-expanded
-            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+            // Alterna atributo aria-expanded para acessibilidade
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
             menuToggle.setAttribute('aria-expanded', !isExpanded);
         });
     }
 
-    // 2. Funcionalidade do Botão Voltar ao Topo
-    const btnTopo = document.getElementById("btnTopo");
+    // ===== BOTÃO VOLTAR AO TOPO =====
+    const btnTopo = document.getElementById('btnTopo');
 
-    // Mostra/Esconde o botão com base na posição do scroll
-    window.onscroll = function() {
-        scrollFunction();
+    const toggleTopoButton = () => {
+        const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+        btnTopo.style.display = scrollPos > 200 ? 'block' : 'none';
     };
 
-    function scrollFunction() {
-        // Mostra o botão após 200px de scroll
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            btnTopo.style.display = "block";
-        } else {
-            btnTopo.style.display = "none";
-        }
-    }
+    window.addEventListener('scroll', toggleTopoButton);
 
-    // Função para voltar ao topo (com scroll suave)
-    window.topFunction = function() {
+    // Scroll suave para o topo
+    const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     };
+
+    if (btnTopo) {
+        btnTopo.addEventListener('click', scrollToTop);
+    }
+
+    // ===== EFEITOS ADICIONAIS (opcional) =====
+    // Você pode adicionar animações ou classes CSS para hover do botão
+    // Exemplo: btnTopo.classList.add('show') / remove('show')
 });

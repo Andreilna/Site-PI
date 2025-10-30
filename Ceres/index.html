@@ -1,420 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ceres</title>
-
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    
-  </head>
-  <body>
-    <header id="header">
-      <div class="container header-content">
-        <div class="logo">
-          <a href="#">
-            <img src="img/logo.png" alt="Logo Ceres - Agricultura Inteligente" />
-          </a>
-        </div>
-        <nav class="nav">
-          <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#noticias">Notícias</a></li>
-            <li><a href="#projeto">Projeto</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-          </ul>
-        </nav>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
-          ☰
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ceres - Início</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo Ceres" /></a>
       </div>
-    </header>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="news.html">Notícias</a></li>
+          <li><a href="project.html">Projeto</a></li>
+          <li><a href="team.html">Equipe</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
 
-    <main>
-      <div class="spacer-header"></div>
+  <!-- ========== MAIN ========== -->
+  <main>
+    <div class="spacer-header"></div>
 
-      <br><br>
-      <section class="ultimas-noticias" id="noticias">
-        <div class="container section-wrapper">
-          <h2 class="noticias-titulo">Últimas Notícias e Inovações</h2>
-          <br>
+    <!-- Hero Section -->
+    <section class="hero" style="text-align:center; padding: 120px 20px; background: linear-gradient(135deg, #f9f9f9, #e0b13c33);">
+      <h1 style="font-size: 3em; color: #333;">Bem-vindo ao <span style="color: #e0b13c;">Ceres</span></h1>
+      <p style="font-size: 1.3em; color: #555; margin: 20px 0;">Inovações em agricultura inteligente e soluções sustentáveis para um futuro melhor.</p>
 
-          <div class="noticias-container">
-            <article class="noticia-card">
-              <a
-                href="https://futuronoagro.com.br/tecnologia-iot-internet-das-coisas-no-campo-revolucionando-a-agricultura/"
-                target="_blank"
-              >
-                <img
-                  src="img/IOT.jpg"
-                  alt="Imagem IoT na Agricultura"
-                  class="noticia-img"
-                />
-              </a>
-              <div class="noticia-conteudo">
-                <h3 class="noticia-subtitulo">
-                  Internet das Coisas (IoT) Revolucionando a Agricultura
-                </h3>
-                <div class="noticia-meta">
-                  <span class="data">🗓️ 15 de Outubro, 2024</span>
-                  <span class="fonte">Por: Futuro no Agro</span>
-                </div>
-                <p class="noticia-resumo">
-                  A IoT tem desempenhado um papel fundamental na transformação
-                  da agricultura. A integração de dispositivos conectados está
-                  possibilitando a monitorização em tempo real de condições do
-                  solo, clima e cultivos, facilitando a agricultura de precisão.
-                </p>
-                <a
-                  href="https://futuronoagro.com.br/tecnologia-iot-internet-das-coisas-no-campo-revolucionando-a-agricultura/"
-                  target="_blank"
-                  class="btn-ler-mais"
-                  >Ler Mais</a
-                >
-              </div>
-            </article>
+      <!-- Quick Access Buttons -->
+      <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:30px;">
+        <a href="news.html" class="btn-ler-mais">Últimas Notícias</a>
+        <a href="project.html" class="btn-ler-mais">Detalhes do Projeto</a>
+        <a href="team.html" class="btn-ler-mais">Conheça a Equipe</a>
+      </div>
+    </section>
 
-            <article class="noticia-card">
-              <a
-                href="https://blog.araraseed.com.br/inteligencia-artificial-no-agronegocio/"
-                target="_blank"
-                ><img
-                  src="img/AI_Produtividade.png"
-                  alt="Inteligência Artificial na Agricultura"
-                  class="noticia-img"
-              /></a>
-              <div class="noticia-conteudo">
-                <h3 class="noticia-subtitulo">
-                  Inteligência Artificial Impulsionando a Produtividade
-                </h3>
-                <div class="noticia-meta">
-                  <span class="data">🗓️ 01 de Outubro, 2024</span>
-                  <span class="fonte">Por: Blog Arara Seed</span>
-                </div>
-                <p class="noticia-resumo">
-                  O uso de IA no setor agrícola tem se mostrado eficaz na
-                  personalização de soluções, redução do uso de pesticidas e
-                  aumento da produtividade.
-                </p>
-                <a
-                  href="https://blog.araraseed.com.br/inteligencia-artificial-no-agronegocio/"
-                  target="_blank"
-                  class="btn-ler-mais"
-                  >Ler Mais</a
-                >
-              </div>
-            </article>
-
-            <article class="noticia-card">
-              <a href="https://pinkfarms.com.br/" target="_blank"
-                ><img
-                  src="img/pinkfarm.jpg"
-                  alt="PinkFarm"
-                  class="noticia-img"
-              /></a>
-              <div class="noticia-conteudo">
-                <h3 class="noticia-subtitulo">
-                  Fazenda Vertical Pink Farms - Estudo de Caso
-                </h3>
-                <div class="noticia-meta">
-                  <span class="data">🗓️ 10 de Setembro, 2024</span>
-                  <span class="fonte">Por: Pink Farms</span>
-                </div>
-                <p class="noticia-resumo">
-                  A Pink Farms é a primeira fazenda vertical urbana da América
-                  Latina, com o objetivo de transformar a forma como os alimentos
-                  são produzidos, focando em sustentabilidade e eficiência.
-                </p>
-                <a
-                  href="https://pinkfarms.com.br/"
-                  target="_blank"
-                  class="btn-ler-mais"
-                  >Visitar Site</a
-                >
-              </div>
-            </article>
-
-            <article class="noticia-card">
-              <a href="#"
-                ><img
-                  src="img/AI.jpeg"
-                  alt="Imagem AI"
-                  class="noticia-img"
-              /></a>
-              <div class="noticia-conteudo">
-                <h3 class="noticia-subtitulo">
-                  Automated Machine Learning (AutoML) no Campo
-                </h3>
-                <div class="noticia-meta">
-                  <span class="data">🗓️ 20 de Agosto, 2024</span>
-                  <span class="fonte">Por: Ceres Tech Team</span>
-                </div>
-                <p class="noticia-resumo">
-                  AutoML ganhou força ao automatizar o design e a otimização de
-                  modelos de Machine Learning (ML). Isso permite que
-                  organizações com conhecimento técnico limitado aproveitem o ML
-                  de forma eficaz.
-                </p>
-                <a href="#" class="btn-ler-mais">Detalhes</a>
-              </div>
-            </article>
-
-            <article class="noticia-card">
-              <a href="#"
-                ><img
-                  src="img/hidroponia.jpg"
-                  alt="Imagem Sustentabilidade"
-                  class="noticia-img"
-              /></a>
-              <div class="noticia-conteudo">
-                <h3 class="noticia-subtitulo">
-                  O Desafio da Água e a Hidroponia
-                </h3>
-                <div class="noticia-meta">
-                  <span class="data">🗓️ 05 de Setembro, 2024</span>
-                  <span class="fonte">Por: Blog Ceres</span>
-                </div>
-                <p class="noticia-resumo">
-                  A hidroponia é uma técnica de cultivo que está revolucionando a agricultura moderna, proporcionando uma alternativa sustentável ao cultivo tradicional no solo. Baseada no crescimento das plantas em uma solução nutritiva, sem a necessidade de terra, a hidroponia oferece diversas vantagens ambientais e econômicas que a tornam uma escolha atraente para agricultores que buscam eficiência e sustentabilidade.    
-                </p>
-                <a href="https://masterplanti.com.br/hidroponia-e-sustentabilidade-uma-revolucao-no-cultivo-agricola/" target="_blank" class="btn-ler-mais">Ver Análise</a>
-              </div>
-            </article>
-          </div>
+    <!-- Destaques (Cards) -->
+    <section class="home-cards" style="padding: 80px 20px; background-color: #f5f9f5;">
+      <div class="container section-wrapper" style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+        <div class="card" style="background:#fff; padding:30px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.05); width:280px; text-align:center;">
+          <img src="img/news_icon.png" alt="Notícias" style="width:60px; margin-bottom:15px;">
+          <h3>Notícias & Inovações</h3>
+          <p>Fique por dentro das últimas tendências e tecnologias aplicadas à agricultura.</p>
+          <a href="news.html" class="btn-ler-mais">Ler Mais</a>
         </div>
-      </section>
 
-      <section id="projeto" class="section-projeto">
-        <div class="container-full bg-projeto-claro">
-          <div class="spacer-content"></div>
-
-          <div class="projeto-header">
-            <h2 class="hidden-title">Detalhes do Projeto Greenrise</h2>
-            <img
-              src="img/greenrise.png"
-              alt="Logo Greenrise"
-              class="img-logo-projeto"
-            />
-          </div>
-
-          <div class="spacer-content"></div>
-
-          <section id="ambiente-autonomo" class="bg-projeto-claro">
-            <div class="container-autonomo">
-              <h3 class="section-title">
-                Ambiente Autônomo em Fazendas Verticais
-              </h3>
-              <p class="intro">
-                Conheça os 7 componentes essenciais que tornam uma fazenda
-                vertical inteligente com o uso de redes neurais.
-              </p>
-
-              <div class="card-explicativo">
-                <img src="img/sensores.jpg" alt="Sensores" class="card-img" />
-                <div class="card-texto">
-                  <h4>1. Sensores e Coleta de Dados</h4>
-                  <p>
-                    Os sensores são responsáveis por capturar dados do ambiente
-                    como temperatura, umidade, luminosidade, pH da água, CO₂ e
-                    nutrientes. Essas informações são a base para decisões
-                    inteligentes e automáticas. Quanto mais dados, melhor a IA
-                    aprende.
-                  </p>
-                </div>
-              </div>
-
-              <div class="card-explicativo invertido">
-                <img
-                  src="img/atuadores.jpg"
-                  alt="Atuadores"
-                  class="card-img"
-                />
-                <div class="card-texto">
-                  <h4>2. Atuadores Inteligentes</h4>
-                  <p>
-                    Atuadores são os "músculos" do sistema. Com base nas
-                    análises da rede neural, eles ajustam luzes, irrigação,
-                    ventiladores, dosadores de nutrientes e mais, mantendo as
-                    plantas sempre nas condições ideais.
-                  </p>
-                </div>
-              </div>
-
-              <div class="card-explicativo">
-                <img src="img/ia.jpg" alt="Rede Neural" class="card-img" />
-                <div class="card-texto">
-                  <h4>3. Rede Neural Treinada</h4>
-                  <p>
-                    A inteligência artificial aprende com os dados coletados. Com
-                    o tempo, ela prevê padrões, detecta problemas precocemente e
-                    sugere melhorias para aumentar a produtividade e reduzir
-                    desperdícios.
-                  </p>
-                </div>
-              </div>
-
-              <div class="card-explicativo invertido">
-                <img
-                  src="img/controle.jpg"
-                  alt="Controle Central"
-                  class="card-img"
-                />
-                <div class="card-texto">
-                  <h4>4. Controle Central</h4>
-                  <p>
-                    É o cérebro que conecta sensores, atuadores e IA. Ele
-                    processa os dados em tempo real e executa comandos
-                    automaticamente, garantindo que tudo funcione em sintonia e
-                    com alta eficiência.
-                  </p>
-                </div>
-              </div>
-
-              <div class="card-explicativo">
-                <img
-                  src="img/banco_dados.jpg"
-                  alt="Banco de Dados"
-                  class="card-img"
-                />
-                <div class="card-texto">
-                  <h4>5. Banco de Dados</h4>
-                  <p>
-                    Armazena todo o histórico de cultivo e funcionamento do
-                    sistema. Esses dados alimentam os algoritmos de IA e
-                    permitem ajustes futuros baseados em resultados concretos.
-                  </p>
-                </div>
-              </div>
-
-              <div class="card-explicativo invertido">
-                <img
-                  src="img/conectividade.jpg"
-                  alt="Conectividade"
-                  class="card-img"
-                />
-                <div class="card-texto">
-                  <h4>6. Conectividade Segura</h4>
-                  <p>
-                    Um ambiente inteligente exige que tudo esteja conectado com
-                    segurança. Protocolos como MQTT, HTTPS e criptografia
-                    garantem que os dados fluam entre os dispositivos sem riscos
-                    de invasões.
-                  </p>
-                </div>
-              </div>
-
-              <div class="card-explicativo">
-                <img
-                  src="img/adaptacao.jpg"
-                  alt="Autoajuste"
-                  class="card-img"
-                />
-                <div class="card-texto">
-                  <h4>7. Autoajuste Inteligente</h4>
-                  <p>
-                    O sistema aprende continuamente. Se algo não funcionar bem, a
-                    rede neural adapta suas decisões para melhorar os próximos
-                    ciclos de plantio — sempre buscando o máximo desempenho.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <div class="spacer-content"></div>
-
-          <section id="ods" class="container section-wrapper">
-            <figure class="ods-figure">
-              <img
-                src="img/ods.jpg"
-                alt="Logos dos Objetivos de Desenvolvimento Sustentável (ODS)"
-                class="ods-img"
-              />
-            </figure>
-
-            <h3 class="section-title text-center">
-              Objetivos de Desenvolvimento Sustentável (ODS)
-            </h3>
-            <p class="section-subtitle">
-              A Ceres, por meio de suas iniciativas abordará quatro Objetivos de
-              Desenvolvimento Sustentável (ODS):
-              <br /><br />
-              **ODS 2** - Fome Zero e Agricultura Sustentável.<br />
-              **ODS 9** - Indústria, Inovação e Infraestrutura.<br />
-              **ODS 11** - Cidades e Comunidades Sustentáveis.<br />
-              **ODS 12** - Consumo e Produção Responsáveis.
-            </p>
-
-            <div class="spacer-content"></div>
-          </section>
+        <div class="card" style="background:#fff; padding:30px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.05); width:280px; text-align:center;">
+          <img src="img/project_icon.png" alt="Projeto" style="width:60px; margin-bottom:15px;">
+          <h3>Projeto Greenrise</h3>
+          <p>Conheça nosso projeto de fazendas verticais inteligentes e autônomas.</p>
+          <a href="project.html" class="btn-ler-mais">Detalhes</a>
         </div>
-      </section>
 
-      <section id="equipe" class="bg-equipe">
-        <div class="spacer-content-equipe"></div>
-        <h2 class="equipe-titulo">Nosso Time de Especialistas</h2>
-        <br>
-        <div class="time-container">
-          <div class="membro-card">
-            <figure class="membro-foto-container">
-              <img
-                src="img/andrei.jpeg"
-                alt="Foto de Andrei Lucas"
-                class="membro-foto"
-              />
-            </figure>
-            <h4>Andrei Lucas</h4>
-            <p class="membro-funcao">Front-end</p>
-          </div>
-          <div class="membro-card">
-            <figure class="membro-foto-container">
-              <img
-                src="img/erlon.jpeg"
-                alt="Foto de Érlon Viana"
-                class="membro-foto"
-              />
-            </figure>
-            <h4>Érlon Viana</h4>
-            <p class="membro-funcao">
-              Gerente de Documentação<br />Desenvolvedor Web
-            </p>
-          </div>
-          <div class="membro-card">
-            <figure class="membro-foto-container">
-              <img
-                src="img/ricardo.jpeg"
-                alt="Foto de Ricardo Estevam"
-                class="membro-foto"
-              />
-            </figure>
-            <h4>Ricardo Estevam</h4>
-            <p class="membro-funcao">Front-end</p>
-          </div>
-          <div class="membro-card">
-            <figure class="membro-foto-container">
-              <img
-                src="img/leandro.jpeg"
-                alt="Foto de Leandro Sabino"
-                class="membro-foto"
-              />
-            </figure>
-            <h4>Leandro Sabino</h4>
-            <p class="membro-funcao">UX / UI</p>
-          </div>
+        <div class="card" style="background:#fff; padding:30px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.05); width:280px; text-align:center;">
+          <img src="img/team_icon.png" alt="Equipe" style="width:60px; margin-bottom:15px;">
+          <h3>Nosso Time</h3>
+          <p>Conheça os especialistas por trás das soluções inteligentes da Ceres.</p>
+          <a href="team.html" class="btn-ler-mais">Ver Equipe</a>
         </div>
-        <div class="spacer-content-equipe"></div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer">
-      <p>&copy; 2025 Grupo Ceres. Todos os direitos reservados.</p>
-    </footer>
+  <!-- Link do Site do Projeto -->
+<section class="home-link" style="text-align:center; padding: 60px 20px; background-color:#fff3f3; border-top:1px solid #e0e0e0;">
+  <h2 style="font-size:2em; color:#388e3c; margin-bottom:20px;">Acesse o site oficial do projeto</h2>
+  <a href="index.html" target="_blank" class="btn-ler-mais" style="font-size:1.2em; padding:15px 30px;">
+    Visitar Site
+  </a>
+</section>
 
-    <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">
-      ↑
-    </button>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>&copy; 2025 Grupo Ceres. Todos os direitos reservados.</p>
+  </footer>
 
-    <script src="js/java.js"></script>
-  </body>
+  <!-- Botão topo -->
+  <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">↑</button>
+  <script src="js/java.js"></script>
+</body>
 </html>
