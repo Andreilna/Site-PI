@@ -4,40 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ceres - Projeto</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#e0b13c" />
+    <meta name="description" content="Projeto Greenrise: fazendas verticais com IA, sensores, controle e conectividade para produtividade sustentável." />
+    <link rel="canonical" href="/pages/project.html" />
+    <meta property="og:title" content="Ceres - Projeto" />
+    <meta property="og:description" content="Conheça os pilares do projeto Greenrise e seu ambiente autônomo." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/greenrise.png" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ceres",
+      "url": "/",
+      "logo": "../img/logo.png",
+      "sameAs": []
+    }
+    </script>
   </head>
   <body>
+    <a href="#conteudo" class="sr-only">Pular para o conteúdo principal</a>
     <header id="header">
       <div class="container header-content">
         <div class="logo">
-          <a href="index.html"><img src="img/logo.png" alt="Logo Ceres" /></a>
+          <a href="../index.html"><img src="../img/logo.png" alt="Logo Ceres" /></a>
         </div>
         <nav class="nav">
           <ul>
-            <li><a href="index.html">Início</a></li>
+            <li><a href="../index.html">Início</a></li>
             <li><a href="news.html">Notícias</a></li>
-            <li><a href="project.html">Projeto</a></li>
+            <li><a href="project.html" aria-current="page">Projeto</a></li>
             <li><a href="team.html">Equipe</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contact.html">Contato</a></li>
           </ul>
         </nav>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
       </div>
     </header>
 
-    <main>
+    <main id="conteudo" class="main-content">
       <div class="spacer-header"></div>
       <!-- Seção Projeto -->
       <section id="projeto" class="section-projeto">
         <div class="container-full bg-projeto-claro">
-          <section id="projeto" class="section-projeto">
-        <div class="container-full bg-projeto-claro">
           <div class="spacer-content"></div>
           <div class="projeto-header">
             <img
-              src="img/greenrise.png"
+              src="../img/greenrise.png"
               alt="Logo Greenrise"
               class="img-logo-projeto"
+              loading="lazy"
             />
           </div>
 
@@ -54,7 +79,7 @@
               </p>
 
               <div class="card-explicativo">
-                <img src="img/sensores.jpg" alt="Sensores" class="card-img" />
+                <img src="../img/sensores.jpg" alt="Sensores" class="card-img" loading="lazy" />
                 <div class="card-texto">
                   <h4>1. Sensores e Coleta de Dados</h4>
                   <p>
@@ -68,7 +93,7 @@
               </div>
 
               <div class="card-explicativo invertido">
-                <img src="img/atuadores.jpg" alt="Atuadores" class="card-img" />
+                <img src="../img/atuadores.jpg" alt="Atuadores" class="card-img" loading="lazy" />
                 <div class="card-texto">
                   <h4>2. Atuadores Inteligentes</h4>
                   <p>
@@ -81,7 +106,7 @@
               </div>
 
               <div class="card-explicativo">
-                <img src="img/ia.jpg" alt="Rede Neural" class="card-img" />
+                <img src="../img/ia.jpg" alt="Rede Neural" class="card-img" loading="lazy" />
                 <div class="card-texto">
                   <h4>3. Rede Neural Treinada</h4>
                   <p>
@@ -95,9 +120,10 @@
 
               <div class="card-explicativo invertido">
                 <img
-                  src="img/controle.jpg"
+                  src="../img/controle.jpg"
                   alt="Controle Central"
                   class="card-img"
+                  loading="lazy"
                 />
                 <div class="card-texto">
                   <h4>4. Controle Central</h4>
@@ -112,9 +138,10 @@
 
               <div class="card-explicativo">
                 <img
-                  src="img/banco_dados.jpg"
+                  src="../img/banco_dados.jpg"
                   alt="Banco de Dados"
                   class="card-img"
+                  loading="lazy"
                 />
                 <div class="card-texto">
                   <h4>5. Banco de Dados</h4>
@@ -128,9 +155,10 @@
 
               <div class="card-explicativo invertido">
                 <img
-                  src="img/conectividade.jpg"
+                  src="../img/conectividade.jpg"
                   alt="Conectividade"
                   class="card-img"
+                  loading="lazy"
                 />
                 <div class="card-texto">
                   <h4>6. Conectividade Segura</h4>
@@ -144,7 +172,7 @@
               </div>
 
               <div class="card-explicativo">
-                <img src="img/adaptacao.jpg" alt="Autoajuste" class="card-img" />
+                <img src="../img/adaptacao.jpg" alt="Autoajuste" class="card-img" loading="lazy" />
                 <div class="card-texto">
                   <h4>7. Autoajuste Inteligente</h4>
                   <p>
@@ -162,9 +190,10 @@
           <section id="ods" class="container section-wrapper">
             <figure class="ods-figure">
               <img
-                src="img/ods.png"
+                src="../img/ods.png"
                 alt="Logos dos Objetivos de Desenvolvimento Sustentável (ODS)"
                 class="ods-img"
+                loading="lazy"
               />
             </figure>
             <h3 class="section-title text-center">
@@ -182,16 +211,14 @@
           </section>
         </div>
       </section>
-
-        </div>
-      </section>
     </main>
 
     <footer class="footer">
       <p>&copy; 2025 Grupo Ceres. Todos os direitos reservados.</p>
     </footer>
 
-    <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">↑</button>
-    <script src="js/java.js"></script>
+    <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
+    <script src="../js/java.js" defer></script>
   </body>
-</html>
+ </html>
+

@@ -1,40 +1,50 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ===== MENU HAMBÚRGUER =====
-    const menuToggle = document.getElementById('menu-toggle');
-    const nav = document.querySelector('.nav');
+  // ===== MENU HAMBÚRGUER =====
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.querySelector('.nav');
 
-    if (menuToggle && nav) {
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-            // Alterna atributo aria-expanded para acessibilidade
-            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-            menuToggle.setAttribute('aria-expanded', !isExpanded);
-        });
+  if (menuToggle && nav) {
+    // Garantir estado inicial do aria-expanded
+    if (!menuToggle.hasAttribute('aria-expanded')) {
+      menuToggle.setAttribute('aria-expanded', 'false');
     }
 
-    // ===== BOTÃO VOLTAR AO TOPO =====
-    const btnTopo = document.getElementById('btnTopo');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+    });
 
-    const toggleTopoButton = () => {
-        const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
-        btnTopo.style.display = scrollPos > 200 ? 'block' : 'none';
-    };
+    // Fechar menu ao clicar em um link (mobile)
+    nav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (nav.classList.contains('active')) {
+          nav.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
 
-    window.addEventListener('scroll', toggleTopoButton);
+  // ===== BOTÃO VOLTAR AO TOPO =====
+  const btnTopo = document.getElementById('btnTopo');
 
-    // Scroll suave para o topo
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
+  const toggleTopoButton = () => {
+    if (!btnTopo) return;
+    const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+    btnTopo.style.display = scrollPos > 200 ? 'block' : 'none';
+  };
 
-    if (btnTopo) {
-        btnTopo.addEventListener('click', scrollToTop);
-    }
+  window.addEventListener('scroll', toggleTopoButton, { passive: true });
 
-    // ===== EFEITOS ADICIONAIS (opcional) =====
-    // Você pode adicionar animações ou classes CSS para hover do botão
-    // Exemplo: btnTopo.classList.add('show') / remove('show')
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  if (btnTopo) {
+    btnTopo.addEventListener('click', scrollToTop);
+  }
 });

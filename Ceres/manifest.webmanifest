@@ -1,0 +1,16 @@
+{
+  "name": "Ceres",
+  "short_name": "Ceres",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f5f9f5",
+  "theme_color": "#e0b13c",
+  "icons": [
+    {
+      "src": "img/favicon.ico",
+      "sizes": "48x48 64x64 96x96",
+      "type": "image/x-icon"
+    }
+  ]
+}
+

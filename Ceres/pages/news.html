@@ -4,28 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ceres - Notícias</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <meta name="theme-color" content="#e0b13c" />
+  <meta name="description" content="Últimas notícias e inovações em agricultura, IoT, IA e fazendas verticais pela Ceres." />
+  <link rel="canonical" href="/pages/news.html" />
+  <meta property="og:title" content="Ceres - Notícias" />
+  <meta property="og:description" content="Confira tendências e estudos de caso em agricultura inteligente." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../img/logo.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ceres",
+    "url": "/",
+    "logo": "../img/logo.png",
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
+  <a href="#conteudo" class="sr-only">Pular para o conteúdo principal</a>
   <header id="header">
     <div class="container header-content">
       <div class="logo">
-        <a href="index.html"><img src="img/logo.png" alt="Logo Ceres" /></a>
+        <a href="../index.html"><img src="../img/logo.png" alt="Logo Ceres" /></a>
       </div>
       <nav class="nav">
         <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="news.html">Notícias</a></li>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="news.html" aria-current="page">Notícias</a></li>
           <li><a href="project.html">Projeto</a></li>
           <li><a href="team.html">Equipe</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="contact.html">Contato</a></li>
         </ul>
       </nav>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
-  <main>
+  <main id="conteudo" class="main-content">
     <div class="spacer-header"></div>
 
     <!-- ===================== NOTÍCIAS ===================== -->
@@ -37,12 +63,13 @@
           <article class="noticia-card">
               <a
                 href="https://futuronoagro.com.br/tecnologia-iot-internet-das-coisas-no-campo-revolucionando-a-agricultura/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <img
-                  src="img/IOT.jpg"
+                  src="../img/IOT.jpg"
                   alt="Imagem IoT na Agricultura"
                   class="noticia-img"
+                  loading="lazy"
                 />
               </a>
               <div class="noticia-conteudo">
@@ -61,7 +88,7 @@
                 </p>
                 <a
                   href="https://futuronoagro.com.br/tecnologia-iot-internet-das-coisas-no-campo-revolucionando-a-agricultura/"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="btn-ler-mais"
                   >Ler Mais</a
                 >
@@ -71,12 +98,13 @@
             <article class="noticia-card">
               <a
                 href="https://blog.araraseed.com.br/inteligencia-artificial-no-agronegocio/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <img
-                  src="img/AI_Produtividade.png"
+                  src="../img/AI_Produtividade.png"
                   alt="Inteligência Artificial na Agricultura"
                   class="noticia-img"
+                  loading="lazy"
                 />
               </a>
               <div class="noticia-conteudo">
@@ -94,7 +122,7 @@
                 </p>
                 <a
                   href="https://blog.araraseed.com.br/inteligencia-artificial-no-agronegocio/"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="btn-ler-mais"
                   >Ler Mais</a
                 >
@@ -102,8 +130,8 @@
             </article>
 
             <article class="noticia-card">
-              <a href="https://pinkfarms.com.br/" target="_blank">
-                <img src="img/pinkfarm.jpg" alt="PinkFarm" class="noticia-img" />
+              <a href="https://pinkfarms.com.br/" target="_blank" rel="noopener noreferrer">
+                <img src="../img/pinkfarm.jpg" alt="PinkFarm" class="noticia-img" loading="lazy" />
               </a>
               <div class="noticia-conteudo">
                 <h3 class="noticia-subtitulo">
@@ -120,7 +148,7 @@
                 </p>
                 <a
                   href="https://pinkfarms.com.br/"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="btn-ler-mais"
                   >Visitar Site</a
                 >
@@ -129,7 +157,7 @@
 
             <article class="noticia-card">
               <a href="#">
-                <img src="img/AI.jpeg" alt="Imagem AI" class="noticia-img" />
+                <img src="../img/AI.jpeg" alt="Imagem AI" class="noticia-img" loading="lazy" />
               </a>
               <div class="noticia-conteudo">
                 <h3 class="noticia-subtitulo">
@@ -152,9 +180,10 @@
             <article class="noticia-card">
               <a href="#">
                 <img
-                  src="img/hidroponia.jpg"
+                  src="../img/hidroponia.jpg"
                   alt="Imagem Sustentabilidade"
                   class="noticia-img"
+                  loading="lazy"
                 />
               </a>
               <div class="noticia-conteudo">
@@ -176,7 +205,7 @@
                 </p>
                 <a
                   href="https://masterplanti.com.br/hidroponia-e-sustentabilidade-uma-revolucao-no-cultivo-agricola/"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="btn-ler-mais"
                   >Ver Análise</a
                 >
@@ -191,7 +220,8 @@
     <p>&copy; 2025 Grupo Ceres. Todos os direitos reservados.</p>
   </footer>
 
-  <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">↑</button>
-  <script src="js/java.js"></script>
+  <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
+  <script src="../js/java.js" defer></script>
 </body>
 </html>
+

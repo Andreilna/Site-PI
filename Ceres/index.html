@@ -4,10 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ceres - Início</title>
+  <meta name="description" content="Ceres: agricultura inteligente, fazendas verticais e soluções sustentáveis. Notícias, projeto Greenrise e equipe." />
+  <link rel="canonical" href="/index.html" />
+  <meta name="theme-color" content="#e0b13c" />
+  <meta property="og:title" content="Ceres - Início" />
+  <meta property="og:description" content="Agricultura inteligente e soluções sustentáveis. Conheça notícias, projeto e equipe." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/logo.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ceres",
+    "url": "/",
+    "logo": "img/logo.png",
+    "sameAs": []
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ceres",
+    "url": "/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "/search?q={query}",
+      "query-input": "required name=query"
+    }
+  }
+  </script>
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
+  <a href="#conteudo" class="sr-only">Pular para o conteúdo principal</a>
   <!-- ========== HEADER ========== -->
   <header id="header">
     <div class="container header-content">
@@ -16,49 +53,51 @@
       </div>
       <nav class="nav">
         <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="news.html">Notícias</a></li>
-          <li><a href="project.html">Projeto</a></li>
-          <li><a href="team.html">Equipe</a></li>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="pages/news.html">Notícias</a></li>
+          <li><a href="pages/project.html">Projeto</a></li>
+          <li><a href="pages/team.html">Equipe</a></li>
+          <li><a href="pages/about.html">Sobre</a></li>
+          <li><a href="pages/contact.html">Contato</a></li>
         </ul>
       </nav>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
   <!-- ========== MAIN ========== -->
-  <main>
+  <main id="conteudo" class="main-content">
     <div class="spacer-header"></div>
 
     <!-- Hero Section -->
-    <section class="hero" style="text-align:center; padding: 120px 20px; background: linear-gradient(135deg, #f9f9f9, #e0b13c33);">
-      <h1 style="font-size: 3em; color: #333;">Bem-vindo ao <span style="color: #e0b13c;">Ceres</span></h1>
-      <p style="font-size: 1.3em; color: #555; margin: 20px 0;">Inovações em agricultura inteligente e soluções sustentáveis para um futuro melhor.</p>
+    <section class="hero">
+      <h1>Bem-vindo ao <span class="highlight">Ceres</span></h1>
+      <p>Inovações em agricultura inteligente e soluções sustentáveis para um futuro melhor.</p>
 
       <!-- Quick Access Buttons -->
-      <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:30px;">
-        <a href="news.html" class="btn-ler-mais">Últimas Notícias</a>
-        <a href="project.html" class="btn-ler-mais">Detalhes do Projeto</a>
-        <a href="team.html" class="btn-ler-mais">Conheça a Equipe</a>
+      <div class="hero-actions">
+        <a href="pages/news.html" class="btn-ler-mais">Últimas Notícias</a>
+        <a href="pages/project.html" class="btn-ler-mais">Detalhes do Projeto</a>
+        <a href="pages/team.html" class="btn-ler-mais">Conheça a Equipe</a>
       </div>
     </section>
 
     <!-- Destaques (Cards) -->
-    <section class="home-cards" style="padding: 80px 20px; background-color: #f5f9f5;">
-      <div class="container section-wrapper" style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
-        <div class="card" style="background:#fff; padding:30px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.05); width:280px; text-align:center;">
+    <section class="home-cards">
+      <div class="container section-wrapper home-cards-grid">
+        <div class="home-card">
           <h3>Notícias & Inovações</h3>
           <p>Fique por dentro das últimas tendências e tecnologias aplicadas à agricultura.</p>
           <a href="news.html" class="btn-ler-mais">Ler Mais</a>
         </div>
 
-        <div class="card" style="background:#fff; padding:30px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.05); width:280px; text-align:center;">
+        <div class="home-card">
           <h3>Projeto Greenrise</h3>
           <p>Conheça nosso projeto de fazendas verticais inteligentes e autônomas.</p>
           <a href="project.html" class="btn-ler-mais">Detalhes</a>
         </div>
 
-        <div class="card" style="background:#fff; padding:30px; border-radius:15px; box-shadow:0 4px 20px rgba(0,0,0,0.05); width:280px; text-align:center;">
+        <div class="home-card">
           <h3>Nosso Time</h3>
           <p>Conheça os especialistas por trás das soluções inteligentes da Ceres.</p>
           <a href="team.html" class="btn-ler-mais">Ver Equipe</a>
@@ -68,12 +107,99 @@
   </main>
 
   <!-- Link do Site do Projeto -->
-<section class="home-link" style="text-align:center; padding: 60px 20px; background-color:#fff3f3; border-top:1px solid #e0e0e0;">
-  <h2 style="font-size:2em; color:#388e3c; margin-bottom:20px;">Acesse o site oficial do projeto</h2>
-  <a href="https://greenrise-by-ceres.vercel.app/" target="_blank" class="btn-ler-mais" style="font-size:1.2em; padding:15px 30px;">
+<section class="home-link">
+  <h2>Acesse o site oficial do projeto</h2>
+  <a href="https://greenrise-by-ceres.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-ler-mais">
     Visitar Site
   </a>
 </section>
+
+  <!-- Benefícios / Features -->
+  <section class="features">
+    <div class="container section-wrapper">
+      <h2 class="section-title">Por que escolher a Ceres?</h2>
+      <p class="intro">Tecnologia aplicada para elevar produtividade, reduzir custos e promover sustentabilidade.</p>
+      <div class="features-grid" aria-label="Benefícios">
+        <div class="feature-card">
+          <h3>Monitoramento em Tempo Real</h3>
+          <p>Sensores e dashboards para tomada de decisão baseada em dados.</p>
+        </div>
+        <div class="feature-card">
+          <h3>IA Orientada a Resultados</h3>
+          <p>Redes neurais que aprendem com o cultivo e otimizam cada ciclo.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Eficiência Hídrica</h3>
+          <p>Algoritmos e hidroponia para uso inteligente da água e nutrientes.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Segurança e Conectividade</h3>
+          <p>Protocolos seguros (HTTPS, MQTT) e integração com nuvem.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Escalabilidade</h3>
+          <p>Arquitetura pronta para crescer sem perder desempenho.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Suporte Especializado</h3>
+          <p>Equipe multidisciplinar acompanhando do planejamento à operação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="testimonials">
+    <div class="container section-wrapper">
+      <h2 class="section-title">O que dizem</h2>
+      <div class="cards">
+        <blockquote class="testimonial">
+          <p>“Conseguimos reduzir desperdícios e aumentar a previsibilidade do cultivo.”</p>
+          <cite>— Operador de Fazenda Urbana</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>“A integração de sensores com IA trouxe um novo patamar de eficiência.”</p>
+          <cite>— Engenheira Agrônoma</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>“Instalação simples, resultados rápidos e suporte próximo do time.”</p>
+          <cite>— Diretor de Operações</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container section-wrapper">
+      <h2 class="section-title">Perguntas Frequentes</h2>
+      <div class="faq-item">
+        <h4>É possível integrar com sistemas existentes?</h4>
+        <p>Sim. Oferecemos integrações via APIs e protocolos industriais comuns.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Qual o ganho médio de produtividade?</h4>
+        <p>Varia por cultura, mas casos apontam até 20–35% com otimização contínua.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Como funcionam atualizações da IA?</h4>
+        <p>Modelos são treinados com dados históricos e atualizados de forma segura.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Newsletter -->
+  <section class="cta-newsletter">
+    <div class="container section-wrapper">
+      <h3>Receba novidades e insights</h3>
+      <p>Assine para receber notícias sobre agricultura inteligente e automação.</p>
+      <form class="cta-form" action="mailto:contato@ceres.example" method="post" enctype="text/plain">
+        <label for="email-news" class="sr-only">Seu e-mail</label>
+        <input id="email-news" name="email" type="email" placeholder="seuemail@exemplo.com" required />
+        <button type="submit" class="btn-ler-mais">Assinar</button>
+      </form>
+    </div>
+  </section>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
@@ -81,7 +207,7 @@
   </footer>
 
   <!-- Botão topo -->
-  <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">↑</button>
-  <script src="js/java.js"></script>
+  <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
+  <script src="js/java.js" defer></script>
 </body>
 </html>

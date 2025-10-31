@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ceres - Contato</title>
+  <meta name="description" content="Fale com a Ceres. Envie uma mensagem e retornaremos em breve." />
+  <link rel="canonical" href="/pages/contact.html" />
+  <meta name="theme-color" content="#e0b13c" />
+  <meta property="og:title" content="Ceres - Contato" />
+  <meta property="og:description" content="Entre em contato com a equipe Ceres." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../img/logo.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ceres",
+    "url": "/",
+    "logo": "../img/logo.png",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <a href="#conteudo" class="sr-only">Pular para o conteúdo principal</a>
+  <header id="header">
+    <div class="container header-content">
+      <div class="logo">
+        <a href="../index.html"><img src="../img/logo.png" alt="Logo Ceres" /></a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="news.html">Notícias</a></li>
+          <li><a href="project.html">Projeto</a></li>
+          <li><a href="team.html">Equipe</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="contact.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="main-content">
+    <div class="spacer-header"></div>
+    <section class="hero">
+      <h1>Contato</h1>
+      <p>Conte-nos sobre seu projeto. Vamos crescer juntos.</p>
+    </section>
+
+    <section class="features">
+      <div class="container section-wrapper">
+        <h2 class="section-title">Envie uma mensagem</h2>
+        <form class="cta-form" action="mailto:contato@ceres.example" method="post" enctype="text/plain" style="max-width:800px; margin:0 auto;">
+          <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
+            <label for="nome" class="sr-only">Seu nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required style="flex:1; min-width:200px; padding:12px 14px; border:1px solid #ddd; border-radius:6px;" />
+            <label for="email" class="sr-only">Seu e-mail</label>
+            <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required style="flex:1; min-width:240px; padding:12px 14px; border:1px solid #ddd; border-radius:6px;" />
+          </div>
+          <div style="margin-top:10px;">
+            <label for="mensagem" class="sr-only">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Como podemos ajudar?" required style="width:100%; padding:12px 14px; border:1px solid #ddd; border-radius:6px;"></textarea>
+          </div>
+          <div style="margin-top:12px; text-align:center;">
+            <button type="submit" class="btn-ler-mais">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Grupo Ceres. Todos os direitos reservados.</p>
+    <div class="footer-links">
+      <a href="about.html">Sobre</a> · <a href="contact.html">Contato</a>
+    </div>
+  </footer>
+
+  <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
+  <script src="../js/java.js" defer></script>
+</body>
+</html>
+

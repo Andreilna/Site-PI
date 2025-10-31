@@ -4,30 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ceres - Equipe</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#e0b13c" />
+    <meta name="description" content="Equipe Ceres: profissionais em front-end, UX/UI e desenvolvimento web impulsionando agricultura inteligente." />
+    <link rel="canonical" href="/pages/team.html" />
+    <meta property="og:title" content="Ceres - Equipe" />
+    <meta property="og:description" content="Conheça o time por trás do projeto Ceres." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/logo.png" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ceres",
+      "url": "/",
+      "logo": "../img/logo.png",
+      "sameAs": []
+    }
+    </script>
   </head>
   <body>
     <header id="header">
       <div class="container header-content">
         <div class="logo">
-          <a href="index.html"><img src="img/logo.png" alt="Logo Ceres" /></a>
+          <a href="../index.html"><img src="../img/logo.png" alt="Logo Ceres" /></a>
         </div>
         <nav class="nav">
           <ul>
-            <li><a href="index.html">Início</a></li>
+            <li><a href="../index.html">Início</a></li>
             <li><a href="news.html">Notícias</a></li>
             <li><a href="project.html">Projeto</a></li>
-            <li><a href="team.html">Equipe</a></li>
+            <li><a href="team.html" aria-current="page">Equipe</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contact.html">Contato</a></li>
           </ul>
         </nav>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
       </div>
     </header>
 
     <main>
       <div class="spacer-header"></div>
-      <!-- Seção Projeto -->
       <section id="projeto" class="section-projeto">
         <div class="container-full bg-projeto-claro">
           <section id="equipe" class="bg-equipe">
@@ -39,9 +63,10 @@
           <div class="membro-card">
             <figure class="membro-foto-container">
               <img
-                src="img/andrei.jpeg"
+                src="../img/andrei.jpeg"
                 alt="Foto de Andrei Lucas"
                 class="membro-foto"
+                loading="lazy"
               />
             </figure>
             <h4>Andrei Lucas</h4>
@@ -51,9 +76,10 @@
           <div class="membro-card">
             <figure class="membro-foto-container">
               <img
-                src="img/erlon.jpeg"
+                src="../img/erlon.jpeg"
                 alt="Foto de Érlon Viana"
                 class="membro-foto"
+                loading="lazy"
               />
             </figure>
             <h4>Érlon Viana</h4>
@@ -64,10 +90,11 @@
 
           <div class="membro-card">
             <figure class="membro-foto-container">
-              <a href="https://github.com/Richardo-o" target="_blank"><img
-                src="img/ricardo.jpeg"
+              <a href="https://github.com/Richardo-o" target="_blank" rel="noopener noreferrer"><img
+                src="../img/ricardo.jpeg"
                 alt="Foto de Ricardo Estevam"
                 class="membro-foto"
+                loading="lazy"
               />
               </a>
             </figure>
@@ -78,9 +105,10 @@
           <div class="membro-card">
             <figure class="membro-foto-container">
               <img
-                src="img/leandro.jpeg"
+                src="../img/leandro.jpeg"
                 alt="Foto de Leandro Sabino"
                 class="membro-foto"
+                loading="lazy"
               />
             </figure>
             <h4>Leandro Sabino</h4>
@@ -97,7 +125,8 @@
       <p>&copy; 2025 Grupo Ceres. Todos os direitos reservados.</p>
     </footer>
 
-    <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">↑</button>
-    <script src="js/java.js"></script>
+    <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
+    <script src="../js/java.js" defer></script>
   </body>
-</html>
+ </html>
+
