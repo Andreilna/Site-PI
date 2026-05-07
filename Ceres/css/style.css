@@ -14,6 +14,17 @@
   --spacing-base: 15px;
   --spacing-lg: 30px;
   --spacing-xl: 60px;
+  --selene-950:  #081C15;
+  --selene-900:  #1B4332;
+  --selene-800:  #2D6A4F;
+  --selene-700:  #40916C;
+  --selene-500:  #52B788;
+  --selene-400:  #74C69D;
+  --selene-200:  #B7E4C7;
+  --selene-100:  #D8F3DC;
+  --selene-50:   #EEF8F1;
+  --selene-accent: #95D5B2;
+  --selene-gold:   #C8B560;
 }
 
 /* ===== RESET ===== */
@@ -689,3 +700,331 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+    /* ─── RESET MINIMAL ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); background: #fff; }
+
+    /* ─── CONTAINERS ─── */
+    .selene-wrapper {
+      background: var(--selene-50);
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .container-selene {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .spacer-selene { height: 4rem; }
+    .spacer-selene-sm { height: 2rem; }
+
+    /* ─── HERO LOGO BLOCK ─── */
+    .selene-hero {
+      background: linear-gradient(135deg, var(--selene-900) 0%, var(--selene-800) 60%, var(--selene-700) 100%);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .selene-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(82,183,136,.25) 0%, transparent 60%),
+                  radial-gradient(ellipse at 20% 80%, rgba(27,67,50,.6) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    /* Decorative moon circle */
+    .selene-hero::after {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 2px solid rgba(149,213,178,.2);
+      background: radial-gradient(circle at 38% 42%, rgba(149,213,178,.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .selene-logo-name {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      color: #fff;
+      letter-spacing: .04em;
+      position: relative;
+      z-index: 1;
+      line-height: 1;
+    }
+
+    .selene-logo-name span {
+      color: var(--selene-accent);
+      font-style: italic;
+    }
+
+    .selene-tagline {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--selene-200);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+    }
+
+    .selene-badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .selene-badge {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(149,213,178,.35);
+      border-radius: 2rem;
+      padding: .45rem 1.25rem;
+      font-size: .8rem;
+      font-weight: 500;
+      color: var(--selene-200);
+      letter-spacing: .06em;
+      backdrop-filter: blur(6px);
+    }
+
+    /* ─── SECTION TITLE STYLE ─── */
+    .selene-section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      color: var(--selene-900);
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .selene-section-title em {
+      font-style: italic;
+      color: var(--selene-700);
+    }
+
+    .selene-intro {
+      text-align: center;
+      font-size: 1rem;
+      color: var(--selene-800);
+      max-width: 600px;
+      margin: 1rem auto 0;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    /* ─── DIVIDER ─── */
+    .selene-divider {
+      width: 56px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--selene-700), var(--selene-400));
+      border-radius: 2px;
+      margin: 1.25rem auto 0;
+    }
+
+    /* ─── CARDS SECTION ─── */
+    .selene-cards-section {
+      background: var(--selene-50);
+      padding: 4rem 0;
+    }
+
+    /* card alternado igual ao padrão do Greenrise */
+    .selene-card {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      background: #fff;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 20px rgba(27,67,50,.07);
+      border: 1px solid var(--selene-100);
+      transition: box-shadow .25s, transform .25s;
+    }
+
+    .selene-card:hover {
+      box-shadow: 0 8px 36px rgba(27,67,50,.14);
+      transform: translateY(-2px);
+    }
+
+    .selene-card.invertido {
+      flex-direction: row-reverse;
+    }
+
+    .selene-card-img {
+      width: 320px;
+      min-width: 220px;
+      height: 220px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    /* placeholder colorido quando imagem não existe */
+    .selene-card-img-placeholder {
+      width: 320px;
+      min-width: 220px;
+      height: 220px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .selene-card-texto {
+      padding: 2rem 2rem 2rem 1rem;
+      flex: 1;
+    }
+
+    .selene-card.invertido .selene-card-texto {
+      padding: 2rem 1rem 2rem 2rem;
+    }
+
+    .selene-card-numero {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: .75rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--selene-500);
+      background: var(--selene-50);
+      border: 1px solid var(--selene-200);
+      border-radius: 1rem;
+      padding: .2rem .75rem;
+      margin-bottom: .75rem;
+    }
+
+    .selene-card-texto h4 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--selene-900);
+      margin-bottom: .6rem;
+      line-height: 1.25;
+    }
+
+    .selene-card-texto p {
+      font-size: .925rem;
+      color: #4a5568;
+      line-height: 1.75;
+      font-weight: 300;
+    }
+
+    /* ─── ODS SECTION ─── */
+    .selene-ods-section {
+      background: linear-gradient(160deg, var(--selene-900) 0%, var(--selene-800) 100%);
+      padding: 5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .selene-ods-section::before {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      border: 1px solid rgba(149,213,178,.15);
+      pointer-events: none;
+    }
+
+    .selene-ods-section::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: -40px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 1px solid rgba(149,213,178,.1);
+      pointer-events: none;
+    }
+
+    .selene-ods-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .selene-ods-img {
+      max-width: 480px;
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 8px 40px rgba(0,0,0,.3);
+      margin-bottom: 2.5rem;
+    }
+
+    .selene-ods-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    .selene-ods-text {
+      font-size: .95rem;
+      color: var(--selene-200);
+      line-height: 2;
+      font-weight: 300;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .selene-ods-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .selene-ods-pill {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(149,213,178,.3);
+      color: var(--selene-accent);
+      border-radius: 2rem;
+      padding: .5rem 1.25rem;
+      font-size: .85rem;
+      font-weight: 500;
+      backdrop-filter: blur(6px);
+    }
+
+    .selene-ods-pill strong {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 760px) {
+      .selene-card,
+      .selene-card.invertido {
+        flex-direction: column;
+      }
+
+      .selene-card-img,
+      .selene-card-img-placeholder {
+        width: 100%;
+        min-width: unset;
+        height: 200px;
+      }
+
+      .selene-card-texto,
+      .selene-card.invertido .selene-card-texto {
+        padding: 1.5rem;
+      }
+    }
