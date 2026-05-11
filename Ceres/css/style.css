@@ -223,17 +223,20 @@ ul {
 }
 
 .btn-secundario {
-  display: inline-block;
+display: inline-block;
+  margin-top: 20px;
   padding: 14px 32px;
-  background-color: transparent;
+border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+
+
   color: var(--cor-primaria) !important;
   border: 2px solid var(--cor-primaria);
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 16px;
-  margin-left: 12px;
+
 }
 
 .btn-secundario:hover {
