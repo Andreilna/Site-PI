@@ -1,221 +1,328 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ceres - Inovação em Agricultura</title>
-  <meta name="description" content="Ceres: grupo de inovação em agricultura inteligente com projetos Greenrise e Selene." />
-  <meta name="theme-color" content="#e0b13c" />
-  <meta property="og:title" content="Ceres - Grupo de Inovação em Agricultura" />
-  <meta property="og:description" content="Transformando a agricultura com tecnologia, dados e sustentabilidade." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta name="twitter:card" content="summary_large_image" />
-  
-  <link rel="canonical" href="/" />
-  <link rel="manifest" href="../manifest.webmanifest" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../Ceres/css/style.css" type="text/css" />
-  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Ceres",
-    "url": "/",
-    "logo": "../img/logo.png",
-    "description": "Grupo de inovação em agricultura inteligente"
-  }
-  </script>
-</head>
-<body>
-  <a href="#conteudo" class="sr-only">Pular para o conteúdo principal</a>
-  
-  <header id="header">
-    <div class="container header-content">
-      <div class="logo">
-        <a href="index.html"><img src="../Ceres/img/logo.png" alt="Logo Ceres" /></a>
-      </div>
-      <nav class="nav">
-        <ul>
-            <li><a href="../Ceres/index.html">Início</a></li>
-            <li><a href="../Ceres/pages/news.html">Notícias</a></li>
-            <li><a href="../Ceres/pages/project.html">Projeto</a></li>
-            <li><a href="../Ceres/pages/team.html" aria-current="page">Equipe</a></li>
-            <li><a href="../Ceres/pages/about.html">Sobre</a></li>
-            <li><a href="../Ceres/pages/contact.html">Contato</a></li>
-        </ul>
-      </nav>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ceres - Inovação em Agricultura</title>
 
-  <main id="conteudo" class="main-content">
-    <!-- HERO SECTION -->
-    <section class="hero-principal">
-      <div class="hero-content">
-        <h1>Inovação em Agricultura Inteligente</h1>
-        <p>Transformando o futuro da produção agrícola com tecnologia, sustentabilidade e excelência operacional.</p>
-        <div class="hero-actions">
-          <a href="pages/projetos.html" class="btn-principal">Conheça Nossos Projetos</a>
-          <a href="pages/contact.html" class="btn-secundario">Entre em Contato</a>
+    <meta
+      name="description"
+      content="Ceres: grupo de inovação em agricultura inteligente com projetos Greenrise e Selene."
+    />
+    <meta name="theme-color" content="#e0b13c" />
+
+    <meta
+      property="og:title"
+      content="Ceres - Grupo de Inovação em Agricultura"
+    />
+    <meta
+      property="og:description"
+      content="Transformando a agricultura com tecnologia, dados e sustentabilidade."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="canonical" href="/" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ceres",
+        "url": "/",
+        "logo": "img/logo.png",
+        "description": "Grupo de inovação em agricultura inteligente"
+      }
+    </script>
+  </head>
+
+  <body>
+    <a href="#conteudo" class="sr-only">Pular para o conteúdo principal</a>
+
+    <header id="header">
+      <div class="container header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Logo Ceres" />
+          </a>
         </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-illustration"><img src="../Ceres/img/logo.png" alt="Logo Ceres" style="width: 400px; height: 300px;"/></div>
-      </div>
-    </section>
 
-    <!-- PROJETOS PRINCIPAIS -->
-    <section class="projetos-destaque" id="projetos">
-      <div class="container section-wrapper">
-        <h2 class="section-title">Nossos Projetos</h2>
-        <p class="section-subtitle">Duas soluções inovadoras para o futuro da agricultura</p>
-        
-        <div class="projetos-grid">
-          <!-- PROJETO GREENRISE -->
-          <article class="projeto-card greenrise">
-            <div class="projeto-header-card">
-              <div class="projeto-icon">🏢</div>
-              <h3>Greenrise</h3>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pages/news.html">Notícias</a></li>
+            <li><a href="pages/project.html">Projeto</a></li>
+            <li><a href="pages/team.html">Equipe</a></li>
+            <li><a href="pages/about.html">Sobre</a></li>
+            <li><a href="pages/contact.html">Contato</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main id="conteudo" class="main-content">
+      <!-- HERO -->
+      <section class="hero-principal">
+        <div class="hero-content">
+          <h1>Inovação em Agricultura Inteligente</h1>
+
+          <p>
+            Transformando o futuro da produção agrícola com tecnologia,
+            sustentabilidade e excelência operacional.
+          </p>
+
+          <div class="hero-actions">
+            <a href="pages/project.html" class="btn-principal">
+              Conheça Nossos Projetos
+            </a>
+
+            <a href="pages/contact.html" class="btn-secundario">
+              Entre em Contato
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-illustration">
+            <img
+              src="img/logo.png"
+              alt="Logo Ceres"
+              style="width: 400px; height: 300px"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section class="projetos-destaque" id="projetos">
+        <div class="container section-wrapper">
+          <h2 class="section-title">Nossos Projetos</h2>
+
+          <p class="section-subtitle">
+            Duas soluções inovadoras para o futuro da agricultura
+          </p>
+
+          <div class="projetos-grid">
+            <!-- GREENRISE -->
+            <article class="projeto-card greenrise">
+              <div class="projeto-header-card">
+                <div class="projeto-icon">🏢</div>
+                <h3>Greenrise</h3>
+              </div>
+
+              <p class="projeto-descricao">
+                Sistema de fazendas verticais com inteligência artificial,
+                automação inteligente e produção de alimentos sustentável.
+              </p>
+
+              <ul class="projeto-features">
+                <li>✓ Sensores e Coleta de Dados</li>
+                <li>✓ Atuadores Inteligentes</li>
+                <li>✓ Rede Neural Treinada</li>
+                <li>✓ Controle Central Autônomo</li>
+                <li>✓ Banco de Dados em Tempo Real</li>
+                <li>✓ Conectividade Segura</li>
+              </ul>
+
+              <a href="pages/greenrise.html" class="btn-saiba-mais">
+                Saiba Mais
+              </a>
+            </article>
+
+            <!-- SELENE -->
+            <article class="projeto-card selene">
+              <div class="projeto-header-card">
+                <div class="projeto-icon">🍄</div>
+                <h3>Selene</h3>
+              </div>
+
+              <p class="projeto-descricao">
+                Plataforma de monitoramento e gestão agrícola que utiliza IA
+                para otimizar decisões em tempo real no campo.
+              </p>
+
+              <ul class="projeto-features">
+                <li>✓ Análise Preditiva</li>
+                <li>✓ Gestão de Recursos</li>
+                <li>✓ Monitoramento Remoto</li>
+                <li>✓ Relatórios Inteligentes</li>
+                <li>✓ Integração de Dados</li>
+                <li>✓ Suporte à Decisão</li>
+              </ul>
+
+              <a href="pages/selene.html" class="btn-saiba-mais">
+                Saiba Mais
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIFERENCIAIS -->
+      <section class="diferenciais">
+        <div class="container section-wrapper">
+          <h2 class="section-title">Por Que Ceres?</h2>
+
+          <div class="diferenciais-grid">
+            <div class="diferencial-card">
+              <div class="diferencial-icon">💡</div>
+              <h4>Inovação Contínua</h4>
+
+              <p>
+                Desenvolvemos soluções de ponta que acompanham a evolução
+                tecnológica e as necessidades do mercado.
+              </p>
             </div>
-            <p class="projeto-descricao">
-              Sistema de fazendas verticais com inteligência artificial, automação inteligente e produção de alimentos sustentável.
-            </p>
-            <ul class="projeto-features">
-              <li>✓ Sensores e Coleta de Dados</li>
-              <li>✓ Atuadores Inteligentes</li>
-              <li>✓ Rede Neural Treinada</li>
-              <li>✓ Controle Central Autônomo</li>
-              <li>✓ Banco de Dados em Tempo Real</li>
-              <li>✓ Conectividade Segura</li>
-            </ul>
-            <a href="pages/greenrise.html" class="btn-saiba-mais">Saiba Mais</a>
-          </article>
 
-          <!-- PROJETO SELENE -->
-          <article class="projeto-card selene">
-            <div class="projeto-header-card">
-              <div class="projeto-icon">🍄</div>
-              <h3>Selene</h3>
+            <div class="diferencial-card">
+              <div class="diferencial-icon">🌍</div>
+              <h4>Sustentabilidade</h4>
+
+              <p>
+                Nossas soluções reduzem o impacto ambiental e promovem produção
+                responsável e eficiente.
+              </p>
             </div>
-            <p class="projeto-descricao">
-              Plataforma de monitoramento e gestão agrícola que utiliza IA para otimizar decisões em tempo real no campo.
-            </p>
-            <ul class="projeto-features">
-              <li>✓ Análise Preditiva</li>
-              <li>✓ Gestão de Recursos</li>
-              <li>✓ Monitoramento Remoto</li>
-              <li>✓ Relatórios Inteligentes</li>
-              <li>✓ Integração de Dados</li>
-              <li>✓ Suporte à Decisão</li>
-            </ul>
-            <a href="pages/selene.html" class="btn-saiba-mais">Saiba Mais</a>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <!-- DIFERENCIAIS -->
-    <section class="diferenciais">
-      <div class="container section-wrapper">
-        <h2 class="section-title">Por Que Ceres?</h2>
-        <div class="diferenciais-grid">
-          <div class="diferencial-card">
-            <div class="diferencial-icon">💡</div>
-            <h4>Inovação Contínua</h4>
-            <p>Desenvolvemos soluções de ponta que acompanham a evolução tecnológica e as necessidades do mercado.</p>
-          </div>
-          <div class="diferencial-card">
-            <div class="diferencial-icon">🌍</div>
-            <h4>Sustentabilidade</h4>
-            <p>Nossas soluções reduzem o impacto ambiental e promovem produção responsável e eficiente.</p>
-          </div>
-          <div class="diferencial-card">
-            <div class="diferencial-icon">📊</div>
-            <h4>Dados & IA</h4>
-            <p>Utilizamos inteligência artificial e análise de dados para otimizar cada aspecto da produção agrícola.</p>
-          </div>
-          <div class="diferencial-card">
-            <div class="diferencial-icon">👥</div>
-            <h4>Equipe Especializada</h4>
-            <p>Profissionais experientes em desenvolvimento, design e inovação tecnológica trabalhando para seu sucesso.</p>
+            <div class="diferencial-card">
+              <div class="diferencial-icon">📊</div>
+              <h4>Dados & IA</h4>
+
+              <p>
+                Utilizamos inteligência artificial e análise de dados para
+                otimizar cada aspecto da produção agrícola.
+              </p>
+            </div>
+
+            <div class="diferencial-card">
+              <div class="diferencial-icon">👥</div>
+              <h4>Equipe Especializada</h4>
+
+              <p>
+                Profissionais experientes em desenvolvimento, design e inovação
+                tecnológica trabalhando para seu sucesso.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ESTATÍSTICAS -->
-    <section class="estatisticas">
-      <div class="container section-wrapper">
-        <h2 class="section-title">Impacto Ceres</h2>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number">2</div>
-            <p class="stat-label">Projetos Inovadores</p>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">4</div>
-            <p class="stat-label">Especialistas Dedicados</p>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">4</div>
-            <p class="stat-label">ODS Contemplados</p>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">100%</div>
-            <p class="stat-label">Foco em Sustentabilidade</p>
+      <!-- ESTATÍSTICAS -->
+      <section class="estatisticas">
+        <div class="container section-wrapper">
+          <h2 class="section-title">Impacto Ceres</h2>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">2</div>
+              <p class="stat-label">Projetos Inovadores</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">4</div>
+              <p class="stat-label">Especialistas Dedicados</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">4</div>
+              <p class="stat-label">ODS Contemplados</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <p class="stat-label">Foco em Sustentabilidade</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CTA FINAL -->
-    <section class="cta-final">
-      <div class="container section-wrapper">
-        <h2>Pronto para Transformar Sua Agricultura?</h2>
-        <p>Converse com nossa equipe sobre como nossas soluções podem beneficiar seu negócio.</p>
-        <a href="pages/contact.html" class="btn-principal">Solicitar Demonstração</a>
-      </div>
-    </section>
-  </main>
+      <!-- CTA -->
+      <section class="cta-final">
+        <div class="container section-wrapper">
+          <h2>Pronto para Transformar Sua Agricultura?</h2>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Ceres</h4>
-        <p>Inovação em agricultura inteligente e sustentável.</p>
-      </div>
-      <div class="footer-section">
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="pages/projetos.html">Projetos</a></li>
-          <li><a href="pages/team.html">Equipe</a></li>
-          <li><a href="pages/contact.html">Contato</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Projetos</h4>
-        <ul>
-          <li><a href="pages/greenrise.html">Greenrise</a></li>
-          <li><a href="pages/selene.html">Selene</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Contato</h4>
-        <p>Email: contato@ceresagro.com.br</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Grupo Ceres. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+          <p>
+            Converse com nossa equipe sobre como nossas soluções podem
+            beneficiar seu negócio.
+          </p>
 
-  <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
-  <script src="../js/java.js" defer></script>
-</body>
+          <a href="pages/contact.html" class="btn-principal">
+            Solicitar Demonstração
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Ceres</h4>
+          <p>Inovação em agricultura inteligente e sustentável.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Navegação</h4>
+
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pages/project.html">Projetos</a></li>
+            <li><a href="pages/team.html">Equipe</a></li>
+            <li><a href="pages/contact.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Projetos</h4>
+
+          <ul>
+            <li><a href="pages/greenrise.html">Greenrise</a></li>
+            <li><a href="pages/selene.html">Selene</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <p>Email: contato@ceresagro.com.br</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Grupo Ceres. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">
+      ↑
+    </button>
+
+    <!-- JS -->
+    <script src="js/java.js" defer></script>
+  </body>
 </html>

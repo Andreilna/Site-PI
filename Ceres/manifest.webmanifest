@@ -1,6 +1,6 @@
 {
-  "name": "Ceres",
-  "short_name": "Ceres",
+  "name": "ceres",
+  "short_name": "ceres",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#f5f9f5",
