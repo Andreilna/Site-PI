@@ -35,21 +35,60 @@ Com um design limpo, informativo e interativo, o projeto reúne tudo sobre a Cer
 
 O projeto contém diversas seções interativas, pensadas para apresentar o trabalho da equipe de forma clara e moderna:
 
-| Seção | Descrição |
-|-------|------------|
-| 🧑‍🤝‍🧑 **Sobre a Equipe** | História, propósito e integrantes da Equipe Ceres. |
-| 💼 **Portfólio** | Apresenta projetos, sistemas e protótipos. |
-| 📰 **Notícias** | Atualizações, eventos e conquistas. |
-| 🖼️ **Galeria** | Fotos e registros das atividades da equipe. |
-| 📅 **Agenda** | Cronograma de eventos, competições e entregas. |
-| 💬 **Depoimentos** | Feedbacks e opiniões de parceiros e integrantes. |
-| 📞 **Contato** | Formulário para comunicação e parcerias. |
-| 🧠 **Área Interativa** | Conteúdo dinâmico e educativo sobre nossas tecnologias. |
-| 🏆 **Reconhecimentos** | Prêmios, menções e destaques da equipe. |
+| Seção | Descrição | Arquivo |
+|-------|------------|---------|
+| 🏠 **Home** | Página inicial com apresentação da Equipe Ceres | `index.html` |
+| 🧑‍🤝‍🧑 **Sobre** | História, propósito e integrantes da Equipe Ceres | `pages/about.html` |
+| 📊 **Projetos** | Visão geral dos principais projetos desenvolvidos | `pages/project.html` |
+| 🌾 **Greenrise** | Detalhes do projeto de fazenda vertical com IA | `pages/greenrise.html` |
+| 🌙 **Selene** | Informações sobre o projeto Selene | `pages/selene.html` |
+| 📰 **Notícias** | Atualizações, eventos e conquistas da equipe | `pages/news.html` |
+| 👥 **Equipe** | Apresentação dos integrantes e suas funções | `pages/team.html` |
+| 💬 **Contato** | Formulário de contato para parcerias e dúvidas | `pages/contact.html` |
+| ❌ **Erro 404** | Página exibida quando conteúdo não é encontrado | `pages/404.html` |
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## � Como Executar Localmente
+
+### Pré-requisitos
+- Um navegador moderno (Chrome, Firefox, Safari, Edge)
+- Um servidor HTTP local (opcional, mas recomendado)
+
+### Passos
+
+1. **Clone o repositório:**
+   ```bash
+   git clone <url-do-repositorio>
+   cd Site-PI
+   ```
+
+2. **Acesse a pasta do projeto:**
+   ```bash
+   cd Ceres
+   ```
+
+3. **Inicie um servidor local** (escolha uma opção):
+   
+   - **Com Node.js (http-server):**
+     ```bash
+     npx http-server
+     ```
+   
+   - **Com Python 3:**
+     ```bash
+     python -m http.server 8000
+     ```
+   
+   - **Ou simplesmente abra** `index.html` diretamente no navegador
+
+4. **Acesse no navegador:**
+   - Local: `http://localhost:8000` (ou a porta indicada)
+   - Arquivo: `file:///path/to/Ceres/index.html`
+
+---
+
+## �🛠️ Tecnologias Utilizadas
 
 O site foi desenvolvido **sem frameworks**, utilizando **HTML, CSS e JavaScript puros**, priorizando leveza e performance:
 
@@ -63,19 +102,84 @@ O site foi desenvolvido **sem frameworks**, utilizando **HTML, CSS e JavaScript 
 
 ---
 
+## 🌐 SEO e Performance
+
+O site implementa as melhores práticas de otimização:
+
+- ✅ **Meta tags otimizadas** para buscadores (Open Graph, Twitter Card)
+- ✅ **Sitemap.xml** para melhor indexação no Google
+- ✅ **PWA (Progressive Web App)** com `manifest.webmanifest`
+- ✅ **Lazy loading** de imagens não críticas
+- ✅ **Scripts com defer** para não bloquear carregamento
+- ✅ **Links seguros** com `rel="noopener noreferrer"`
+- ✅ **Acessibilidade** com aria-labels e skip links
+
+---
+
+## ♿ Acessibilidade
+
+O projeto segue as normas WCAG 2.1 Level AA:
+
+- Navegação com teclado completa
+- Skip links para conteúdo principal
+- Atributos ARIA apropriados
+- Contraste de cores adequado
+- Textos alternativos em imagens importantes
+
+---
+
+## 📝 Licença
+
+Este projeto está licenciado sob a **MIT License** — veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+## 👨‍💻 Autor
+
+**Desenvolvido pela Equipe Ceres**  
+🔗 Acesse: [https://equipe-ceres.vercel.app/](https://equipe-ceres.vercel.app/)
+
+---
+
+## 💬 Suporte e Contato
+
+Tem dúvidas ou sugestões? Entre em contato através do formulário no site ou abra uma **issue** neste repositório.
+
+**Email:** [contato da equipe]  
+**GitHub:** [Equipe Ceres]
+
+---
+
+<div align="center">
+
+**🌾 Cultivando o futuro através da tecnologia! 🌾**
+
+</div>
+
+---
+
 ## 🧩 Estrutura de Pastas
 
 ```bash
-📁 Equipe-Ceres/
-├── 📄 index.html
-├── 📁 css/
-│   ├── style.css
-│   └── responsive.css
-├── 📁 js/
-│   ├── main.js
-│   └── animations.js
-├── 📁 assets/
-│   ├── images/
-│   ├── icons/
-│   └── logo/
+📁 Site-PI/
+├── 📁 Ceres/
+│   ├── 📄 index.html              # Página principal
+│   ├── 📄 manifest.webmanifest    # Configuração PWA
+│   ├── 📄 sitemap.xml             # Mapa do site (SEO)
+│   ├── 📄 README.md               # Documentação técnica
+│   ├── 📁 css/
+│   │   └── style.css              # Estilos globais
+│   ├── 📁 js/
+│   │   └── java.js                # Funcionalidades e animações
+│   ├── 📁 img/                    # Imagens e ícones
+│   └── 📁 pages/
+│       ├── 404.html               # Página de erro
+│       ├── about.html             # Sobre a equipe
+│       ├── contact.html           # Contato
+│       ├── greenrise.html         # Projeto Greenrise
+│       ├── news.html              # Notícias
+│       ├── project.html           # Projetos
+│       ├── selene.html            # Projeto Selene
+│       └── team.html              # Equipe
+├── 📄 LICENSE
 └── 📄 README.md
