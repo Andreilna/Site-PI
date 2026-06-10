@@ -4,77 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ceres - Inovação em Agricultura</title>
-
     <meta
       name="description"
       content="Ceres: grupo de inovação em agricultura inteligente com projetos Greenrise e Selene."
     />
-    <meta name="theme-color" content="#e0b13c" />
-
-    <meta
-      property="og:title"
-      content="Ceres - Grupo de Inovação em Agricultura"
-    />
-    <meta
-      property="og:description"
-      content="Transformando a agricultura com tecnologia, dados e sustentabilidade."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <link rel="canonical" href="/" />
-    <link rel="manifest" href="manifest.webmanifest" />
-
+    <meta name="theme-color" content="#E0B13C" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Ceres",
-        "url": "/",
-        "logo": "img/logo.png",
-        "description": "Grupo de inovação em agricultura inteligente"
-      }
-    </script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
+  <body id="top">
     <a href="#conteudo" class="sr-only">Pular para o conteúdo principal</a>
 
+    <!-- HEADER -->
     <header id="header">
-      <div class="container header-content">
+      <div class="container header-inner">
         <div class="logo">
-          <a href="index.html">
-            <img src="img/logo.png" alt="Logo Ceres" />
-          </a>
+          <a href="#top"><img src="img/logo.svg" alt="Ceres" /></a>
         </div>
-
-        <nav class="nav">
+        <nav class="nav" id="nav">
           <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="pages/news.html">Notícias</a></li>
-            <li><a href="pages/project.html">Projeto</a></li>
-            <li><a href="pages/team.html">Equipe</a></li>
-            <li><a href="pages/about.html">Sobre</a></li>
-            <li><a href="pages/contact.html">Contato</a></li>
+            <li><a href="#top">Início</a></li>
+            <li><a href="#news">Notícias</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
-
         <button
           class="menu-toggle"
           id="menu-toggle"
@@ -86,235 +48,642 @@
       </div>
     </header>
 
-    <main id="conteudo" class="main-content">
+    <main id="conteudo">
       <!-- HERO -->
-      <section class="hero-principal">
-        <div class="hero-content">
-          <h1>Inovação em Agricultura Inteligente</h1>
-
-          <p>
-            Transformando o futuro da produção agrícola com tecnologia,
-            sustentabilidade e excelência operacional.
-          </p>
-
-          <div class="hero-actions">
-            <a href="pages/project.html" class="btn-principal">
-              Conheça Nossos Projetos
-            </a>
-
-            <a href="pages/contact.html" class="btn-secundario">
-              Entre em Contato
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-illustration">
-            <img
-              src="img/logo.png"
-              alt="Logo Ceres"
-              style="width: 400px; height: 300px"
-            />
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-text">
+              <span class="eyebrow">Agricultura Inteligente</span>
+              <h1>
+                O futuro da<br /><span>produção agrícola</span><br />começa
+                aqui.
+              </h1>
+              <p>
+                Transformamos tecnologia, inteligência artificial e
+                sustentabilidade em soluções reais para o campo brasileiro.
+              </p>
+              <div class="hero-cta">
+                <a href="#projetos" class="btn btn-gold">Conhecer Projetos</a>
+                <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+              </div>
+              <div class="hero-stats">
+                <div>
+                  <div class="hero-stat-num">2</div>
+                  <div class="hero-stat-label">Projetos Ativos</div>
+                </div>
+                <div>
+                  <div class="hero-stat-num">90%</div>
+                  <div class="hero-stat-label">Redução de Água</div>
+                </div>
+                <div>
+                  <div class="hero-stat-num">24/7</div>
+                  <div class="hero-stat-label">Monitoramento</div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="hero-logo-wrap">
+                <img src="img/logo2.png" alt="Ceres Logo" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- PROJETOS -->
-      <section class="projetos-destaque" id="projetos">
-        <div class="container section-wrapper">
-          <h2 class="section-title">Nossos Projetos</h2>
+      <!-- PROJECTS -->
+      <section class="projects section-pad" id="projetos">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow eyebrow-green">Inovação no Campo</span>
+            <h2>Nossos Projetos</h2>
+            <p>
+              Duas plataformas complementares que cobrem do campo ao controle,
+              da colheita à decisão.
+            </p>
+            <div class="divider"></div>
+          </div>
 
-          <p class="section-subtitle">
-            Duas soluções inovadoras para o futuro da agricultura
-          </p>
-
-          <div class="projetos-grid">
+          <div class="projects-grid">
             <!-- GREENRISE -->
-            <article class="projeto-card greenrise">
-              <div class="projeto-header-card">
-                <div class="projeto-icon">🏢</div>
-                <h3>Greenrise</h3>
-              </div>
-
-              <p class="projeto-descricao">
-                Sistema de fazendas verticais com inteligência artificial,
-                automação inteligente e produção de alimentos sustentável.
+            <article class="project-card greenrise">
+              <div class="project-icon">🌿</div>
+              <h3>Greenrise</h3>
+              <p>
+                Fazenda vertical inteligente com automação, sensores avançados e
+                rede neural treinada para controle autônomo de cada ciclo de
+                cultivo.
               </p>
-
-              <ul class="projeto-features">
-                <li>✓ Sensores e Coleta de Dados</li>
-                <li>✓ Atuadores Inteligentes</li>
-                <li>✓ Rede Neural Treinada</li>
-                <li>✓ Controle Central Autônomo</li>
-                <li>✓ Banco de Dados em Tempo Real</li>
-                <li>✓ Conectividade Segura</li>
+              <ul class="feature-list">
+                <li>
+                  <span class="feature-check">✓</span> Sensores de temperatura,
+                  umidade, pH e CO₂
+                </li>
+                <li>
+                  <span class="feature-check">✓</span> Atuadores e controle
+                  autônomo de irrigação
+                </li>
+                <li>
+                  <span class="feature-check">✓</span> Rede neural treinada para
+                  decisões em ciclo
+                </li>
+                <li>
+                  <span class="feature-check">✓</span> Banco de dados em tempo
+                  real
+                </li>
+                <li>
+                  <span class="feature-check">✓</span> Conectividade segura e
+                  escalável
+                </li>
               </ul>
-
-              <a href="pages/greenrise.html" class="btn-saiba-mais">
-                Saiba Mais
-              </a>
+              <a href="#greenrise" class="btn btn-green">Ver detalhes</a>
             </article>
 
             <!-- SELENE -->
-            <article class="projeto-card selene">
-              <div class="projeto-header-card">
-                <div class="projeto-icon">🍄</div>
-                <h3>Selene</h3>
-              </div>
-
-              <p class="projeto-descricao">
-                Plataforma de monitoramento e gestão agrícola que utiliza IA
-                para otimizar decisões em tempo real no campo.
+            <article class="project-card selene">
+              <div class="project-icon">🍄</div>
+              <h3 style="color: #fff">Selene</h3>
+              <p>
+                Plataforma de monitoramento agrícola com IA para otimizar
+                decisões em tempo real, detectar anomalias e gerar relatórios
+                inteligentes.
               </p>
-
-              <ul class="projeto-features">
-                <li>✓ Análise Preditiva</li>
-                <li>✓ Gestão de Recursos</li>
-                <li>✓ Monitoramento Remoto</li>
-                <li>✓ Relatórios Inteligentes</li>
-                <li>✓ Integração de Dados</li>
-                <li>✓ Suporte à Decisão</li>
+              <ul class="feature-list">
+                <li>
+                  <span class="feature-check">✓</span> Monitoramento remoto e
+                  análise preditiva
+                </li>
+                <li>
+                  <span class="feature-check">✓</span> Detecção de anomalias com
+                  deep learning
+                </li>
+                <li>
+                  <span class="feature-check">✓</span> Alertas automáticos de
+                  risco
+                </li>
+                <li>
+                  <span class="feature-check">✓</span> Dashboard intuitivo e
+                  relatórios
+                </li>
+                <li>
+                  <span class="feature-check">✓</span> Integração completa de
+                  dados IoT
+                </li>
               </ul>
-
-              <a href="pages/selene.html" class="btn-saiba-mais">
-                Saiba Mais
-              </a>
+              <a href="#selene" class="btn btn-gold">Ver detalhes</a>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- DIFERENCIAIS -->
-      <section class="diferenciais">
-        <div class="container section-wrapper">
-          <h2 class="section-title">Por Que Ceres?</h2>
+      <!-- NEWS -->
+      <section class="news section-pad" id="news">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow eyebrow-green">Tendências & Cases</span>
+            <h2>Últimas Notícias</h2>
+            <p>
+              Acompanhe o que há de mais relevante em agricultura inteligente e
+              inovação no agronegócio.
+            </p>
+            <div class="divider"></div>
+          </div>
+          <div class="news-grid">
+            <article class="news-card">
+              <div class="news-date-block">
+                <div class="news-day">24</div>
+                <div class="news-month">Nov</div>
+                <div class="news-year">2026</div>
+              </div>
+              <div class="news-body">
+                <div class="news-source">Equipe Ceres</div>
+                <h3>Inovação e eficiência no manejo de culturas</h3>
+                <p>
+                  Produção hidropônica com controle de pH, EC e irrigação
+                  automatizada para alfaces, garantindo alta qualidade e
+                  eficiência operacional.
+                </p>
+              </div>
+            </article>
 
-          <div class="diferenciais-grid">
-            <div class="diferencial-card">
-              <div class="diferencial-icon">💡</div>
-              <h4>Inovação Contínua</h4>
+            <article class="news-card">
+              <div class="news-date-block">
+                <div class="news-day">15</div>
+                <div class="news-month">Out</div>
+                <div class="news-year">2024</div>
+              </div>
+              <div class="news-body">
+                <div class="news-source">Futuro no Agro</div>
+                <h3>IoT e automação no campo</h3>
+                <p>
+                  Sensores conectados e análise em tempo real permitem decisões
+                  mais rápidas e precisas na produção agrícola.
+                </p>
+              </div>
+            </article>
 
+            <article class="news-card">
+              <div class="news-date-block">
+                <div class="news-day">01</div>
+                <div class="news-month">Out</div>
+                <div class="news-year">2024</div>
+              </div>
+              <div class="news-body">
+                <div class="news-source">Blog Arara Seed</div>
+                <h3>IA impulsionando a produtividade</h3>
+                <p>
+                  Aplicar inteligência artificial no agronegócio reduz uso de
+                  pesticidas e melhora significativamente os resultados de
+                  produção.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about section-pad" id="sobre">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow eyebrow-green">Quem Somos</span>
+            <h2>Sobre a Ceres</h2>
+            <p>
+              Missão, visão e valores que orientam cada decisão do nosso grupo.
+            </p>
+            <div class="divider"></div>
+          </div>
+          <div class="about-grid">
+            <div class="about-card">
+              <div class="about-card-num">M</div>
+              <h3>Missão</h3>
               <p>
-                Desenvolvemos soluções de ponta que acompanham a evolução
-                tecnológica e as necessidades do mercado.
+                Capacitar produtores com soluções inteligentes que elevam
+                produtividade e reduzem impactos ambientais, tornando a
+                agricultura mais sustentável e eficiente.
               </p>
             </div>
+            <div class="about-card">
+              <div class="about-card-num">V</div>
+              <h3>Visão</h3>
+              <p>
+                Ser referência em automação agrícola e fazendas verticais na
+                América Latina, liderando a transformação digital do setor
+                agropecuário.
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-num">V</div>
+              <h3>Valores</h3>
+              <p>
+                Inovação contínua, transparência nas relações, sustentabilidade
+                como princípio e foco total no sucesso do cliente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="diferencial-card">
-              <div class="diferencial-icon">🌍</div>
+      <!-- GREENRISE DETAIL -->
+      <section
+        class="project-detail greenrise-detail section-pad"
+        id="greenrise"
+      >
+        <div class="container">
+          <div class="detail-grid">
+            <div class="detail-text">
+              <span class="eyebrow eyebrow-green">Projeto 01</span>
+              <h2>Greenrise</h2>
+              <p>
+                Greenrise usa sensores avançados, atuadores inteligentes e uma
+                rede neural treinada para tomar decisões autônomas e otimizar
+                cada ciclo de cultivo em fazendas verticais.
+              </p>
+              <ul class="detail-features">
+                <li>
+                  <span class="tick">✓</span> Sensores de temperatura, umidade,
+                  pH, CO₂ e nutrientes
+                </li>
+                <li>
+                  <span class="tick">✓</span> Controle automático de iluminação
+                  e irrigação
+                </li>
+                <li>
+                  <span class="tick">✓</span> Banco de dados em tempo real
+                  integrado
+                </li>
+                <li>
+                  <span class="tick">✓</span> Conectividade segura com análise
+                  preditiva
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p
+                style="
+                  font-size: 0.8rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 0.1em;
+                  color: var(--muted);
+                  margin-bottom: 16px;
+                "
+              >
+                Resultados Esperados
+              </p>
+              <div class="metrics">
+                <div class="metric">
+                  <div class="metric-num">90%</div>
+                  <p>Redução no uso de água</p>
+                </div>
+                <div class="metric">
+                  <div class="metric-num">80%</div>
+                  <p>Menos pesticidas</p>
+                </div>
+                <div class="metric">
+                  <div class="metric-num">3×</div>
+                  <p>Mais colheitas por ano</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELENE DETAIL -->
+      <section
+        class="project-detail selene-detail section-pad"
+        id="selene"
+        style="background: var(--forest)"
+      >
+        <div class="container">
+          <div class="detail-grid">
+            <div class="detail-text">
+              <span class="eyebrow" style="color: var(--gold-light)"
+                >Projeto 02</span
+              >
+              <h2>Selene</h2>
+              <p>
+                Selene integra sensores IoT, câmeras e análise de dados para
+                otimizar recursos e prevenir problemas antes que aconteçam, com
+                suporte de decisão baseado em IA.
+              </p>
+              <ul class="detail-features">
+                <li>
+                  <span class="tick">✓</span> Monitoramento contínuo em tempo
+                  real
+                </li>
+                <li>
+                  <span class="tick">✓</span> Detecção de anomalias visuais com
+                  deep learning
+                </li>
+                <li>
+                  <span class="tick">✓</span> Alertas automáticos de riscos e
+                  desvios
+                </li>
+                <li>
+                  <span class="tick">✓</span> Dashboard intuitivo com relatórios
+                  inteligentes
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p
+                style="
+                  font-size: 0.8rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 0.1em;
+                  color: rgba(255, 255, 255, 0.5);
+                  margin-bottom: 16px;
+                "
+              >
+                Impacto na Produção
+              </p>
+              <div class="metrics">
+                <div class="metric">
+                  <div class="metric-num">24/7</div>
+                  <p>Monitoramento contínuo</p>
+                </div>
+                <div class="metric">
+                  <div class="metric-num">60%</div>
+                  <p>Menos perdas</p>
+                </div>
+                <div class="metric">
+                  <div class="metric-num">IA</div>
+                  <p>Suporte automatizado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="team section-pad" id="equipe">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow eyebrow-green">As Pessoas por Trás</span>
+            <h2>Nossa Equipe</h2>
+            <p>
+              Profissionais experientes em tecnologia, design e inovação
+              desenvolvendo o futuro da agricultura.
+            </p>
+            <div class="divider"></div>
+          </div>
+          <div class="team-grid">
+            <div class="team-card">
+              <img
+                src="img/andrei.jpeg"
+                alt="Andrei Lucas"
+                class="team-avatar"
+                loading="lazy"
+              />
+              <h3>Andrei Lucas</h3>
+              <div class="team-role">Full Stack Developer</div>
+              <p>Desenvolvedor versátil com expertise em front e back-end.</p>
+            </div>
+            <div class="team-card">
+              <img
+                src="img/erlon.jpeg"
+                alt="Érlon Viana"
+                class="team-avatar"
+                loading="lazy"
+              />
+              <h3>Érlon Viana</h3>
+              <div class="team-role">Docs & Back-end</div>
+              <p>Responsável pela documentação e infraestrutura do projeto.</p>
+            </div>
+            <div class="team-card">
+              <img
+                src="img/ricardo.jpeg"
+                alt="Ricardo Estevam"
+                class="team-avatar"
+                loading="lazy"
+              />
+              <h3>Ricardo Estevam</h3>
+              <div class="team-role">Full Stack Developer</div>
+              <p>Desenvolvedor versátil com expertise em front e back-end.</p>
+            </div>
+            <div class="team-card">
+              <img
+                src="img/leandro.jpeg"
+                alt="Leandro Sabino"
+                class="team-avatar"
+                loading="lazy"
+              />
+              <h3>Leandro Sabino</h3>
+              <div class="team-role">UX / UI Designer</div>
+              <p>
+                Designer focado em usabilidade e soluções visuais criativas.
+              </p>
+            </div>
+            <div class="team-card">
+              <img
+                src="img/lucas.png"
+                alt="Lucas de Barros"
+                class="team-avatar"
+                loading="lazy"
+              />
+              <h3>Lucas de Barros</h3>
+              <div class="team-role">UX / UI Designer</div>
+              <p>Especialista em design de interfaces inovadoras.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CERES -->
+      <section class="why section-pad">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow eyebrow-green">Nossos Diferenciais</span>
+            <h2>Por Que Ceres?</h2>
+            <p>O que nos diferencia no mercado de inovação agrícola.</p>
+            <div class="divider"></div>
+          </div>
+          <div class="why-grid">
+            <div class="why-card">
+              <div class="why-icon">💡</div>
+              <h4>Inovação Contínua</h4>
+              <p>
+                Soluções de ponta que acompanham a evolução tecnológica e as
+                necessidades do mercado.
+              </p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">🌍</div>
               <h4>Sustentabilidade</h4>
-
               <p>
                 Nossas soluções reduzem o impacto ambiental e promovem produção
                 responsável e eficiente.
               </p>
             </div>
-
-            <div class="diferencial-card">
-              <div class="diferencial-icon">📊</div>
+            <div class="why-card">
+              <div class="why-icon">📊</div>
               <h4>Dados & IA</h4>
-
               <p>
-                Utilizamos inteligência artificial e análise de dados para
-                otimizar cada aspecto da produção agrícola.
+                Inteligência artificial e análise de dados para otimizar cada
+                aspecto da produção agrícola.
               </p>
             </div>
-
-            <div class="diferencial-card">
-              <div class="diferencial-icon">👥</div>
+            <div class="why-card">
+              <div class="why-icon">👥</div>
               <h4>Equipe Especializada</h4>
-
               <p>
                 Profissionais experientes em desenvolvimento, design e inovação
-                tecnológica trabalhando para seu sucesso.
+                tecnológica ao seu lado.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ESTATÍSTICAS -->
-      <section class="estatisticas">
-        <div class="container section-wrapper">
-          <h2 class="section-title">Impacto Ceres</h2>
-
+      <!-- STATS -->
+      <section class="stats-section section-pad-sm">
+        <div class="container">
+          <div class="section-header" style="margin-bottom: 48px">
+            <span class="eyebrow">Impacto Ceres</span>
+            <h2 style="color: #fff">Nossos Números</h2>
+            <div class="divider"></div>
+          </div>
           <div class="stats-grid">
-            <div class="stat-card">
-              <div class="stat-number">2</div>
-              <p class="stat-label">Projetos Inovadores</p>
+            <div class="stat-item">
+              <div class="stat-num">2</div>
+              <div class="stat-label">Projetos Inovadores</div>
             </div>
-
-            <div class="stat-card">
-              <div class="stat-number">4</div>
-              <p class="stat-label">Especialistas Dedicados</p>
+            <div class="stat-item">
+              <div class="stat-num">5</div>
+              <div class="stat-label">Especialistas Dedicados</div>
             </div>
-
-            <div class="stat-card">
-              <div class="stat-number">4</div>
-              <p class="stat-label">ODS Contemplados</p>
+            <div class="stat-item">
+              <div class="stat-num">4</div>
+              <div class="stat-label">ODS Contemplados</div>
             </div>
-
-            <div class="stat-card">
-              <div class="stat-number">100%</div>
-              <p class="stat-label">Foco em Sustentabilidade</p>
+            <div class="stat-item">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Foco em Sustentabilidade</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- CTA -->
-      <section class="cta-final">
-        <div class="container section-wrapper">
-          <h2>Pronto para Transformar Sua Agricultura?</h2>
-
-          <p>
-            Converse com nossa equipe sobre como nossas soluções podem
-            beneficiar seu negócio.
-          </p>
-
-          <a href="pages/contact.html" class="btn-principal">
-            Solicitar Demonstração
-          </a>
+      <!-- CONTACT -->
+      <section class="contact section-pad" id="contato">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow eyebrow-green">Vamos Conversar</span>
+            <h2>Entre em Contato</h2>
+            <p>
+              Fale com nossa equipe e descubra como podemos transformar sua
+              operação agrícola.
+            </p>
+            <div class="divider"></div>
+          </div>
+          <div class="contact-wrap">
+            <form
+              action="mailto:contato@ceresagro.com.br"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="nome">Seu Nome</label>
+                  <input
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    placeholder="João Silva"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="email">E-mail</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="joao@empresa.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-field form-msg">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="6"
+                  placeholder="Como podemos ajudar?"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-submit">
+                <button
+                  type="submit"
+                  class="btn btn-green"
+                  style="padding: 16px 48px; font-size: 1rem"
+                >
+                  Enviar Mensagem
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="cta-banner">
+        <h2>Pronto para Transformar Sua Agricultura?</h2>
+        <p>
+          Converse com nossa equipe sobre como nossas soluções podem beneficiar
+          seu negócio hoje mesmo.
+        </p>
+        <a href="#contato" class="btn btn-forest">Solicitar Demonstração</a>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>Ceres</h4>
-          <p>Inovação em agricultura inteligente e sustentável.</p>
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="img/logo.svg" alt="Ceres" />
+            <p>
+              Inovação em agricultura inteligente e sustentável para o futuro do
+              campo brasileiro.
+            </p>
+          </div>
+          <div>
+            <h5>Navegação</h5>
+            <ul class="footer-links">
+              <li><a href="#top">Início</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#equipe">Equipe</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Projetos</h5>
+            <ul class="footer-links">
+              <li><a href="#greenrise">Greenrise</a></li>
+              <li><a href="#selene">Selene</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h5>Contato</h5>
+            <p>
+              ✉
+              <a href="mailto:contato@ceresagro.com.br"
+                >contato@ceresagro.com.br</a
+              >
+            </p>
+          </div>
         </div>
-
-        <div class="footer-section">
-          <h4>Navegação</h4>
-
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="pages/project.html">Projetos</a></li>
-            <li><a href="pages/team.html">Equipe</a></li>
-            <li><a href="pages/contact.html">Contato</a></li>
-          </ul>
+        <div class="footer-bottom">
+          <p>© 2026 Grupo Ceres. Todos os direitos reservados.</p>
         </div>
-
-        <div class="footer-section">
-          <h4>Projetos</h4>
-
-          <ul>
-            <li><a href="pages/greenrise.html">Greenrise</a></li>
-            <li><a href="pages/selene.html">Selene</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h4>Contato</h4>
-          <p>Email: contato@ceresagro.com.br</p>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2025 Grupo Ceres. Todos os direitos reservados.</p>
       </div>
     </footer>
 
@@ -322,7 +691,6 @@
       ↑
     </button>
 
-    <!-- JS -->
-    <script src="js/java.js" defer></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
